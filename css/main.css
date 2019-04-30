@@ -111,6 +111,7 @@ span.copyright { font-size: 10px; color: #fff; margin: 15px 0 0; display: inline
 
 @media (max-width: 576px) { .subscribe { background-color: #f4f44a; }
   .blog-page .form-subscribe { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-  .blog-page .form-subscribe .form__input { margin-right: 0; margin-bottom: 15px; } }
+  .blog-page .form-subscribe .form__input { margin-right: 0; margin-bottom: 15px; }
+  .blog-page .form__input, .blog-page .form__select, .blog-page .form__btn { width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
