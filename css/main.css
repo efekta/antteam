@@ -109,7 +109,8 @@ span.copyright { font-size: 10px; color: #fff; margin: 15px 0 0; display: inline
   .section-subtitle { position: relative; padding-bottom: 50px; }
   .section-subtitle::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; margin: auto; width: 90px; height: 35px; background: url("../img/ill.png") no-repeat 50% 50%; background-size: cover; } }
 
-@media (max-width: 576px) { .subscribe { background-color: #f4f44a; }
+@media (max-width: 576px) { .blog-page .section-title { margin: 0; font-size: 18px; }
+  .subscribe { background-color: #f4f44a; }
   .blog-page .form-subscribe { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
   .blog-page .form-subscribe .form__input { margin-right: 0; margin-bottom: 15px; }
   .blog-page .form__input, .blog-page .form__select, .blog-page .form__btn { width: 100%; }
