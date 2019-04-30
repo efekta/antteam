@@ -44,6 +44,8 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 
 footer { background-color: #161616; }
 
+.mob_block { display: none; }
+
 .blog-page .header { padding: 11px 0 8px 0; background-color: #8ed0ef; }
 
 .header-phone { display: inline-block; text-align: left; margin-right: 20px; }
@@ -100,7 +102,8 @@ span.copyright { font-size: 10pt; color: #fff; margin: 15px 0 0; display: inline
 
 .footer-calc-button-block span { font-weight: 600; font-size: 12pt; text-transform: uppercase; color: #fff; border-bottom: 2px dashed #fff; margin-left: 10px; }
 
-@media (max-width: 1200px) { .footer-phone { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+@media (max-width: 1200px) { .blog-page .search .form__input, .blog-page .search .form__select, .blog-page .search .form__btn { width: 100%; margin-bottom: 15px; }
+  .footer-phone { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
   .footer-calc-button-block span { font-size: 10pt; } }
 
 @media screen and (max-width: 1170px) and (min-width: 320px) { .container { max-width: 100%; padding: 20px; } }
@@ -112,7 +115,13 @@ span.copyright { font-size: 10pt; color: #fff; margin: 15px 0 0; display: inline
   .blog-page .subscribe { padding: 20px 0 30px 0; }
   .blog-page .section-title { margin: 0; font-size: 26px; line-height: 30px; }
   .section-subtitle { position: relative; padding-bottom: 50px; }
-  .section-subtitle::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; margin: auto; width: 90px; height: 35px; background: url("../img/ill.png") no-repeat 50% 50%; background-size: cover; } }
+  .section-subtitle::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; margin: auto; width: 90px; height: 35px; background: url("../img/ill.png") no-repeat 50% 50%; background-size: cover; }
+  .footer-nav { display: none; }
+  .footer-contacts-block .footer-phone { display: none; }
+  .footer-calc-button-block { margin-bottom: 20px; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+  .footer-logo { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: -webkit-box; display: -ms-flexbox; display: flex; }
+  .footer-calc-button-block span.mob_color { color: #f4f44a; border-bottom: 2px dashed #f4f44a; }
+  .mob_block { display: inline-block; } }
 
 @media (max-width: 576px) { .blog-page .section-title { margin: 0; font-size: 18px; }
   .subscribe { background-color: #f4f44a; }
@@ -121,9 +130,6 @@ span.copyright { font-size: 10pt; color: #fff; margin: 15px 0 0; display: inline
   .blog-page .form__input, .blog-page .form__select, .blog-page .form__btn { width: 100%; }
   .blog-page .subscribe__btn { font-size: 14px; text-transform: none; }
   .blog-page .logo-box { max-width: 135px; }
-  .blog-page .subscribe__btn:before { margin-right: 10px; font-size: 18px; font-family: "Font Awesome 5 Free"; }
-  .footer-logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-  .footer-nav { max-height: 100%; margin: 15px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 20px; }
-  .footer-contacts-block { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
+  .blog-page .subscribe__btn:before { margin-right: 10px; font-size: 18px; font-family: "Font Awesome 5 Free"; } }
 
 /*# sourceMappingURL=main.css.map */
