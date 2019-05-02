@@ -1,5 +1,11 @@
+@media (max-width: 1260px)
+  .main-head .logo-box
+    	width: 25%
+    	height: auto
+
+
 @media (max-width: 1200px)
-	.blog-page .search .form__input, .blog-page .search .form__select, .blog-page .search .form__btn
+	.search .form__input, .search .form__select, .search .form__btn
 	    width: 100%
 	    margin-bottom: 15px
 
@@ -11,6 +17,8 @@
 	.footer-calc-button-block span
 	    font-size: 10pt
 
+	.main-head
+    	max-width: 100%
 
 
 
@@ -18,27 +26,27 @@
 @media screen and (max-width: 1170px) and (min-width: 320px)
 	.container 
 		max-width: 100%
-		padding: 20px
+		padding: 0 20px
 
 
 
 @media (max-width: 992px)
-	.blog-page .header-phone 
-    	display: none
-    	
-	.blog-page .logo-box 
+	.header-phone
+		display: none
+
+	.logo-box 
 	    margin: 0 auto 0 0
 
-	.blog-page .calc-block 
+	.calc-block 
 	    display: none
 
-	.blog-page .header-burger-menu
+	.header-burger-menu
 		display: block
 
-	.blog-page .subscribe
+	.subscribe
     	padding: 20px 0 30px 0
 
-	.blog-page .section-title
+	.section-title
 	    margin: 0
 	    font-size: 26px
 	    line-height: 30px
@@ -58,11 +66,16 @@
 		height: 35px
 		background: url('../img/ill.png') no-repeat 50% 50%
 		background-size: cover
+	
+	// main_page
+	.header-services-block
+	    width: auto
 
-
+	.header-service-block
+	    width: 100%
+	// .header-title-block
+	// 		width: 100%
 	//footer
-
-
 	.footer-nav
 		display: none
 	
@@ -83,43 +96,58 @@
 		display: -ms-flex
 		display: -o-flex
 		display: flex
+		align-items: flex-end
+
 	.footer-calc-button-block span.mob_color
 		color: #f4f44a
 		border-bottom: 2px dashed #f4f44a
+		margin-left: 0
 	.mob_block
 		display: inline-block
-// @media (max-width: 768px)
 
+
+
+@media (max-width: 768px)
+	.main-head .logo-box, .logo-box
+	   width: 186px
+
+	.header-title-block
+		font-size: 15pt
 
 
 
 
 
 @media (max-width: 576px)
-	.blog-page .section-title
+	.section-title
 	    margin: 0
 	    font-size: 18px
 	.subscribe
 		background-color: #f4f44a
-	.blog-page .form-subscribe
+	.form-subscribe
 	    flex-direction: column
 	    align-items: center
-	.blog-page .form-subscribe .form__input
+	.form-subscribe .form__input
 	    margin-right: 0
 	    margin-bottom: 15px
-	.blog-page .form__input, .blog-page .form__select, .blog-page .form__btn
+	.form__input, .blog-page .form__select, .form__btn
 	    width: 100%
-	.blog-page .subscribe__btn
+	.subscribe__btn
 		font-size: 14px
 		text-transform: none
-	.blog-page .logo-box
+	.logo-box
 		max-width: 135px
-	.blog-page .subscribe__btn:before
+	.subscribe__btn:before
 	    margin-right: 10px
 	    font-size: 18px
 	    font-family: "Font Awesome 5 Free"
 
 
+	footer#colophon a
+	    color: #fff
+	    width: 105px
+	.footer-calc-button-block span
+	    font-size: 12px
 
 
 

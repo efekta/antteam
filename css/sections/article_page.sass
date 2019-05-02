@@ -1,0 +1,30 @@
+.article-page_bg
+	background-size: cover
+	background-position: 50% 50%
+	background-repeat: no-repeat
+	min-height: 740px
+	position: relative
+	padding-top: 30px
+
+.article-page_bg .breadcrumb-item 
+	color: #fff
+.article-page_bg .breadcrumb-item a
+	color: #fff
+
+.breadcrumb-item.b_w+.breadcrumb-item.b_w::before
+    display: inline-block
+    padding-right: .5rem
+    color: #fff
+    content: "/"
+
+.article-page_bg::before
+	content: ''
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0 , 0, 0, .7)
+
+
