@@ -1,4 +1,4 @@
-// $(document).ready(function(){
+$(document).ready(function(){
 	/*========================
 	 fixed header
 	 =======================*/
@@ -12,5 +12,12 @@
 		// $('.nav').removeClass("nav_hide");
 		}
 	});
-// }); //end document ready function
+
+	$('.main-arrow').on('click', function(){
+	    $('html, body').animate({
+	        scrollTop: $("#down").offset().top
+	    }, 800);
+	    return false;
+	  	});
+}); //end document ready function
 
