@@ -100,6 +100,8 @@ footer { background-color: #161616; }
 
 .header-scroll-block { margin: 10px auto; text-align: center; padding: 20px; margin-bottom: 37px; }
 
+.main-head.header_fixed { max-width: 100%; }
+
 .main-arrow { cursor: pointer; }
 
 .article-page_bg { background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; min-height: 740px; position: relative; padding-top: 30px; }
