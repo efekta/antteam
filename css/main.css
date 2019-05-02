@@ -44,7 +44,11 @@ footer { background-color: #161616; }
 
 .mob_block { display: none; }
 
-.header { padding: 11px 0 8px 0; background-color: #8ed0ef; color: #000; }
+.header { padding: 11px 0 8px 0; background-color: #8ed0ef; color: #000; -webkit-transition: .5s; -o-transition: .5s; transition: .5s; }
+
+.header_fixed { -webkit-transition: .5s; -o-transition: .5s; transition: .5s; position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 99; }
+
+.header_fixed.main-head .logo-box { width: 170px; margin: 0 auto; -webkit-transition: .5s; -o-transition: .5s; transition: .5s; }
 
 .header-phone { display: inline-block; text-align: left; margin-right: 20px; }
 
@@ -60,9 +64,9 @@ footer { background-color: #161616; }
 
 .main-head { max-width: 1500px; margin: auto; padding: 0 20px; margin-bottom: 70px; }
 
-.main-head .logo-box { width: 570px; margin: 0 auto; }
+.main-head .logo-box { width: 38%; margin: 0 auto; }
 
-.header .calc-block__link { display: block; margin-right: 76px; font-size: 16px; font-weight: 400; line-height: 26px; color: #000; text-decoration: none; text-transform: uppercase; border-bottom: 2px dashed #000; }
+.header .calc-block__link { display: block; margin-right: 76px; font-size: 16px; font-weight: 400; line-height: 26px; color: #000; text-decoration: none; text-transform: uppercase; border-bottom: 2px dashed #000; cursor: pointer; }
 
 .header-burger-menu { width: 32px; cursor: pointer; }
 
@@ -82,7 +86,7 @@ footer { background-color: #161616; }
 
 .bg-header { min-height: 615px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; }
 
-.header-title-block { margin-bottom: 55px; text-align: center; text-transform: uppercase; font-size: 2rem; font-weight: 600; font-family: 'Open Sans Bold', sans-serif; }
+.header-title-block { margin-bottom: 55px; text-align: center; text-transform: uppercase; font-size: 40px; font-weight: 600; font-family: 'Open Sans Bold', sans-serif; }
 
 .header-services-block { width: 800px; margin: 0 auto; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding-bottom: 88px; }
 
@@ -90,9 +94,11 @@ footer { background-color: #161616; }
 
 .header-service-block img, .header-service-block span { display: block; margin: auto; text-align: center; font-family: 'Open Sans Semi Bold', sans-serif; font-size: 13pt; }
 
-.header-calc-button-block { background: #000; width: 265px; margin: 90px auto; padding: 10px 15px; color: #ddd; border-radius: 4px; cursor: pointer; }
+.header-calc-button-block { background: #000; width: 265px; margin: 90px auto; padding: 10px 15px; color: #ddd; border-radius: 4px; cursor: pointer; margin-bottom: 100px; }
 
 .header-calc-button-block span { color: #f4f44a; font-size: 15px; text-transform: uppercase; font-family: 'Open Sans Bold', sans-serif; vertical-align: middle; }
+
+.header-scroll-block { margin: 10px auto; text-align: center; padding: 20px; margin-bottom: 37px; }
 
 .article-page_bg { background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; min-height: 740px; position: relative; padding-top: 30px; }
 
@@ -149,17 +155,7 @@ span.copyright { font-size: 10pt; color: #fff; margin: 15px 0 0; display: inline
   .mob_block { display: inline-block; } }
 
 @media (max-width: 768px) { .main-head .logo-box, .logo-box { width: 186px; }
-  .header-title-block { font-size: 15pt; } }
-
-@media (max-width: 576px) { .section-title { margin: 0; font-size: 18px; }
-  .subscribe { background-color: #f4f44a; }
-  .form-subscribe { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-  .form-subscribe .form__input { margin-right: 0; margin-bottom: 15px; }
-  .form__input, .blog-page .form__select, .form__btn { width: 100%; }
-  .subscribe__btn { font-size: 14px; text-transform: none; }
-  .logo-box { max-width: 135px; }
-  .subscribe__btn:before { margin-right: 10px; font-size: 18px; font-family: "Font Awesome 5 Free"; }
-  footer#colophon a { color: #fff; width: 105px; }
-  .footer-calc-button-block span { font-size: 12px; } }
+  .header-title-block { font-size: 15pt; }
+  .header-calc-button-block { width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
