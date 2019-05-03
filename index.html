@@ -5,85 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Главная</title>
+  <link rel="stylesheet" href="libs/fontawesome/font-awesome.css">
   <link rel="icon" href="https://ant-team.ru/wp-content/uploads/2018/11/favicon.jpg" sizes="32x32" />
   <link rel="icon" href="https://ant-team.ru/wp-content/uploads/2018/11/favicon.jpg" sizes="192x192" />
   <link rel="apple-touch-icon-precomposed" href="https://ant-team.ru/wp-content/uploads/2018/11/favicon.jpg" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="libs/slick/slick-theme.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <div class="sticy_footer_wrapper">
     <div class="main_page">
-      <header class="header main-head d-flex align-items-center">     
-        <div class="header-phone">
-          <span>Офис в Санкт-Петербурге</span>
-          <a class="gtmHeaderPhone" href="tel:+78126034188">+7 (812) 603 41 88</a>
-        </div> <!-- /header-phone -->
-        <div class="header-phone">
-          <span>Офис в Санкт-Петербурге</span>
-          <a class="" href="tel:+78126034188">+7 (812) 603 41 88</a>
-        </div>
+        <header class="header main-head">
+          <div class="container d-flex align-items-center">    
+            <div class="header-phone">
+              <span>Офис в Санкт-Петербурге</span>
+              <a class="gtmHeaderPhone" href="tel:+78126034188">+7 (812) 603 41 88</a>
+            </div> <!-- /header-phone -->
+            <div class="header-phone">
+              <span>Офис в Санкт-Петербурге</span>
+              <a class="" href="tel:+78126034188">+7 (812) 603 41 88</a>
+            </div>
 
-        <div class="logo-box">
-          <img src="img/logo.png" alt="логотип">
-        </div>
+            <div class="logo-box">
+              <img src="img/logo.png" alt="логотип">
+            </div>
 
-        <div class="calc-block">
-          <a class="calc-block__link" data-toggle="modal" data-target="#modalTakePrice">
+            <div class="calc-block">
+              <a class="calc-block__link" data-toggle="modal" data-target="#modalTakePrice">
+                  <span class="gtmGetPriceCenter">Раcсчитать стоимость</span>
+              </a>  
+            </div>
+            <div class="header-burger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </header>
+
+        <div class="bg-header bg-blue" style="background-image: url('img/header-bg.png')">
+          <div class="container">
+            <div class="header-middle-block">
+              <h1 class="header-title-block">Продвижение сайтов</h1>
+            </div>
+
+            <div class="header-services-block">
+              <div class="header-service-block">
+                  <img alt="pic" src="img/top-10-ico.png">
+                  <span>Топ-10</span>
+                  <span>Яндекса и Google</span>
+                  <img alt="pic" src="img/top-10-ico-b.png">
+              </div>
+              <div class="header-service-block">
+                  <img alt="pic" src="img/up-visitors-ico.png">
+                  <span>Рост посещаемости</span>
+                  <span>от 20% до 50%</span>
+                  <img alt="pic" src="img/up-visitors-ico-b.png">
+              </div>
+              <div class="header-service-block">
+                  <img alt="pic" src="img/more-sales-ico.png">
+                  <span>Увеличим количество</span>
+                  <span>заявок с сайта</span>
+                  <img alt="pic" src="img/more-sales-ico-b.png">
+              </div>
+            </div>
+
+            <div class="header-calc-button-block" data-toggle="modal" data-target="#modalTakePrice">
+              <img alt="pic" src="img/calc-ico.png">
               <span class="gtmGetPriceCenter">Раcсчитать стоимость</span>
-          </a>  
-        </div>
-        <div class="header-burger-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </header>
-      <div class="bg-header bg-blue" style="background-image: url('img/header-bg.png')">
-        <div class="container">
-          <div class="header-middle-block">
-            <h1 class="header-title-block">Продвижение сайтов</h1>
-          </div>
+            </div>
 
-          <div class="header-services-block">
-            <div class="header-service-block">
-                <img src="img/top-10-ico.png">
-                <span>Топ-10</span>
-                <span>Яндекса и Google</span>
-                <img src="img/top-10-ico-b.png">
-            </div>
-            <div class="header-service-block">
-                <img src="img/up-visitors-ico.png">
-                <span>Рост посещаемости</span>
-                <span>от 20% до 50%</span>
-                <img src="img/up-visitors-ico-b.png">
-            </div>
-            <div class="header-service-block">
-                <img src="img/more-sales-ico.png">
-                <span>Увеличим количество</span>
-                <span>заявок с сайта</span>
-                <img src="img/more-sales-ico-b.png">
+            <div class="header-scroll-block">
+              <img alt="pic" id="down" class=main-arrow src="img/V-b.png">
             </div>
           </div>
-
-          <div class="header-calc-button-block" data-toggle="modal" data-target="#modalTakePrice">
-            <img src="img/calc-ico.png">
-            <span class="gtmGetPriceCenter">Раcсчитать стоимость</span>
-          </div>
-
-          <div class="header-scroll-block">
-            <img id="down" class=main-arrow src="img/V-b.png">
-          </div>
         </div>
-      </div>
+
+    </div>
+
       <section id="why-we" class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="section-title">Почему мы?</div>
+                    <h2 class="section-title">Почему мы?</h2>
                     <div class="section-sub-title">Мы знаем, что делаем, поэтому каждый проект выходит в топ.
                     </div>
                 </div>
@@ -109,57 +118,564 @@
             </div>
          </div>
       </section>
-    </div>
-  </div>
-    <!-- footer -->
-    <footer id="colophon" class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-lg-2 order-2 order-lg-1">
-            <div class="footer-logo">
-              <a href=""><img src="img/logo_footer.png"></a>
-              <span class="copyright">© ant-team.ru, 2018</span>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 order-2 order-lg-2">
-            <ul class="footer-nav">
-              <li class="footer-nav__item">
-                <a href="#" class="footer-nav__link">Услуги</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="#" class="footer-nav__link">О компании</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="#" class="footer-nav__link">Портфолио</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="#" class="footer-nav__link">Блог</a>
-              </li>
-              <li class="footer-nav__item">
-                <a href="#" class="footer-nav__link">Контакты</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-4 order-4 order-lg-3">
-            <div class="footer-contacts-block">
-                <div class="footer-phone"><a class="gtmFooterPhone" href="tel:+78126034188">+7 (812) 603 41 88</a><span>(Офис в Санкт-Петербурге)</span></div>
-                <div class="footer-phone"><a href="tel:88006038143">8 800 603 81 43</a><span>(Бесплатно по России)</span></div>
-            </div>
-          </div>
 
-          <div class="col-lg-3 col-md-12 order-1 order-lg-4">
-              <div class="footer-calc-button-block" data-toggle="modal" data-target="#modalTakePrice">
-                  <span class="mob_block mob_color gtmGetPriceFooter">Позвонить нам</span>
-                  <span class="mob_color gtmGetPriceFooter">Рассчитать стоимость</span>
+      <section id="reviews" class="bg-white">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <h2 class="section-title">отзывы</h2>
+                  </div>
               </div>
           </div>
+      </section>
+
+      <section id="get-leads" class="bg-yellow bg-leads">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-title">Бесплатный аудит</h2>
+                    <div class="section-sub-title">Сомневаетесь?
+                        Давайте мы сделаем аудит вашего сайта.
+                        Бесплатно!
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="get-leads-btn" data-toggle="modal" data-target="#modalTakeFreeAudit">
+                        <img alt="pic" src="img/calc-ico.png">
+                        <span class="gtmGetFreeAudit">Рассчитать стоимость</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="leads-ways">
+                        <div class="leads-way">
+                            <img alt="pic" src="icons/1_icon.svg">
+                            <span>Анализ технических<span></span>ошибок</span>
+                        </div>
+                        <div class="leads-way">
+                            <img alt="pic" src="icons/2_icon.svg">
+                            <span>Выделение кластеров<span></span>для анализа</span>
+                        </div>
+                        <div class="leads-way">
+                            <img alt="pic" src="icons/3_icon.svg">
+                            <span>Текстовый<span></span>анализ</span>
+                        </div>
+                        <div class="leads-way">
+                            <img alt="pic" src="icons/4_icon.svg">
+                            <span>USABILITY<span></span>анализ</span>
+                        </div>
+                        <div class="leads-way">
+                            <img alt="pic" src="icons/5_icon.svg">
+                            <span>Ссылочный<span></span>анализ</span>
+                        </div>
+                        <div class="leads-way">
+                            <img alt="pic" src="icons/6_icon.svg">
+                            <span>Коммерческий<span></span>анализ</span>
+                        </div>
+                        <div class="leads-way">
+                            <img alt="pic" src="icons/7_icon.svg">
+                            <span>Анализ<span></span>конкурентов</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <span data-toggle="modal" data-target="#modalTakeAuditsExample" class="get-leads-btn-more">Примеры наших бесплатных аудитов</span>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="how-we-works" class="bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-title">Как построена работа</h2>
+                    <div class="section-sub-title">Все просто, если следовать четкому mindmap</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="how-we-works-new-project">
+                        <img alt="pic" src="img/new-project.png">
+                        <span>Новый проект</span>
+                        <div class="block-way-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="how-we-works-ways">
+                                <div class="how-we-works-way">
+                                    <img alt="pic" src="icons/1_seo.svg">
+                                    <span>Стратегия по SEO</span>
+                                    <div class="db nav-bg-1"></div>
+                                    <div class="db block-way-2"></div>
+                                    <div class="db block-way-3"></div>
+                                    <div class="db block-way-4"></div>
+                                    <div class="db block-way-5"></div>
+                                    <div class="how-we-works-sub-ways">
+                                        <div class="sub-leads-way">
+                                            Создание структуры проекта
+                                            <div class="sub-leads-text">
+                                                Данный процесс позволяет оценить все возможности и правильно ими
+                                                воспользоваться. Используются рейлинги, штанги, колонны - они делают
+                                                ее болеесовременной и красивой.
+                                            </div>
+                                        </div>
+                                        <div class="sub-leads-way">
+                                            Получение доступов
+                                            <div class="sub-leads-text">
+                                                Данный процесс позволяет оценить все возможности и правильно ими
+                                                воспользоваться. Используются рейлинги, штанги, колонны - они делают
+                                                ее болеесовременной и красивой.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="how-we-works-way">
+                                    <img alt="pic" src="icons/2_audit.svg">
+                                    <span>Полный аудит</span>
+                                    <div class="how-we-works-sub-ways">
+                                        <div class="sub-leads-way">
+                                            Создание структуры проекта
+                                            <div class="sub-leads-text">
+                                                Данный процесс позволяет оценить все возможности и правильно ими
+                                                воспользоваться. Используются рейлинги, штанги, колонны - они делают
+                                                ее болеесовременной и красивой.
+                                            </div>
+                                        </div>
+                                        <div class="sub-leads-way">
+                                            Получение доступов
+                                            <div class="sub-leads-text">
+                                                Данный процесс позволяет оценить все возможности и правильно ими
+                                                воспользоваться. Используются рейлинги, штанги, колонны - они делают
+                                                ее болеесовременной и красивой.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="how-we-works-way">
+                                    <img alt="pic" src="icons/3_semantika.svg">
+                                    <span>Семантика</span>
+                                    <div class="how-we-works-sub-ways">
+                                        <div class="sub-leads-way">
+                                            Создание структуры проекта
+                                            <div class="sub-leads-text">
+                                                Данный процесс позволяет оценить все возможности и правильно ими
+                                                воспользоваться. Используются рейлинги, штанги, колонны - они делают
+                                                ее болеесовременной и красивой.
+                                            </div>
+                                        </div>
+                                        <div class="sub-leads-way">
+                                            Получение доступов
+                                            <div class="sub-leads-text">
+                                                Данный процесс позволяет оценить все возможности и правильно ими
+                                                воспользоваться. Используются рейлинги, штанги, колонны - они делают
+                                                ее болеесовременной и красивой.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="how-we-works-ways">
+                                <div class="how-we-works-way">
+                                    <img alt="pic" src="icons/4_ssilki.svg">
+                                    <span>Ссылочная стратегия</span>
+                                    <div class="how-we-works-sub-ways">
+                                        <div class="sub-leads-way">
+                                            Создание структуры проекта
+                                            <div class="sub-leads-text">
+                                                Данный процесс позволяет оценить все возможности и правильно ими
+                                                воспользоваться. Используются рейлинги, штанги, колонны - они делают
+                                                ее болеесовременной и красивой.
+                                            </div>
+                                        </div>
+                                        <div class="sub-leads-way">
+                                            Получение доступов
+                                            <div class="sub-leads-text">
+                                                Данный процесс позволяет оценить все возможности и правильно ими
+                                                воспользоваться. Используются рейлинги, штанги, колонны - они делают
+                                                ее болеесовременной и красивой.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="how-we-works-ways">
+                                <div class="how-we-works-way">
+                                    <img alt="pic" src="icons/5_content.svg">
+                                    <span>Контент стратегия</span>
+                                    <div class="how-we-works-sub-ways">
+                                        <div class="sub-leads-way">
+                                            Создание структуры проекта
+                                            <div class="sub-leads-text">
+                                                Данный процесс позволяет оценить все возможности и правильно ими
+                                                воспользоваться. Используются рейлинги, штанги, колонны - они делают
+                                                ее болеесовременной и красивой.
+                                            </div>
+                                        </div>
+                                        <div class="sub-leads-way">
+                                            Получение доступов
+                                            <div class="sub-leads-text">
+                                                Данный процесс позволяет оценить все возможности и правильно ими
+                                                воспользоваться. Используются рейлинги, штанги, колонны - они делают
+                                                ее болеесовременной и красивой.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="how-we-works-way">
+                                    <img alt="pic" src="icons/6_prognoz.svg">
+                                    <span>Прогнозная аналитика</span>
+                                    <div class="how-we-works-sub-ways">
+                                        <div class="sub-leads-way">
+                                            Создание структуры проекта
+                                            <div class="sub-leads-text">
+                                                Данный процесс позволяет оценить все возможности и правильно ими
+                                                воспользоваться. Используются рейлинги, штанги, колонны - они делают
+                                                ее болеесовременной и красивой.
+                                            </div>
+                                        </div>
+                                        <div class="sub-leads-way">
+                                            Получение доступов
+                                            <div class="sub-leads-text">
+                                                Данный процесс позволяет оценить все возможности и правильно ими
+                                                воспользоваться. Используются рейлинги, штанги, колонны - они делают
+                                                ее болеесовременной и красивой.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="how-we-works-way">
+                                    <img alt="pic" src="icons/7_analitika.svg">
+                                    <span>Аналитика</span>
+                                    <div class="how-we-works-sub-ways">
+                                        <div class="sub-leads-way">
+                                            Создание структуры проекта
+                                            <div class="sub-leads-text">
+                                                Данный процесс позволяет оценить все возможности и правильно ими
+                                                воспользоваться. Используются рейлинги, штанги, колонны - они делают
+                                                ее болеесовременной и красивой.
+                                            </div>
+                                        </div>
+                                        <div class="sub-leads-way">
+                                            Получение доступов
+                                            <div class="sub-leads-text">
+                                                Данный процесс позволяет оценить все возможности и правильно ими
+                                                воспользоваться. Используются рейлинги, штанги, колонны - они делают
+                                                ее болеесовременной и красивой.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="more-results" class="bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-title">Эффективность во всем</h2>
+                      <div class="section-sub-title">
+                        Мы работаем по формуле ЧКТП. Это значит, что мы не тратим ваш бюджет на то, что не даст результат
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="more-results-item-block">
+                                <div class="more-results-item-title float-l text-al-r">Частотность</div>
+                                <div class="more-results-item-sub-title float-l text-al-r">Неэффективно? В топку</div>
+                                <div class="more-results-item-img float-r">
+                                  <img alt="pic" src="icons/1_chastotnost.svg">
+                                </div>
+                                <div class="more-results-item-text text-al-r">
+                                    Определяем полноту запроса.
+                                    Неэффективные ключи
+                                    не берем в работу.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="more-results-item-block">
+                                <div class="more-results-item-title float-l text-al-r">Трафик</div>
+                                <div class="more-results-item-sub-title float-l text-al-r">Подумай об окупаемости</div>
+                                <div class="more-results-item-img float-r">
+                                  <img alt="pic" src="icons/2_trafik.svg">
+                                </div>
+                                <div class="more-results-item-text text-al-r">Если нет трафика, то нет продаж.
+                                    Не работаем с тем,
+                                    где его нет.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-al-c">
+                    <img alt="pic" src="img/ckpt.png">
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="more-results-item-block">
+                                <div class="more-results-item-title float-r text-al-l">Коммерция</div>
+                                <div class="more-results-item-sub-title float-r text-al-l">Информационка? Попозже</div>
+                                <div class="more-results-item-img float-l">
+                                  <img alt="pic" src="icons/3_commercia.svg">
+                                </div>
+                                <div class="more-results-item-text text-al-l">
+                                    Информационные запросы
+                                    дадут меньше продаж.
+                                    Откладываем их.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="more-results-item-block">
+                                <div class="more-results-item-title float-r text-al-l">План</div>
+                                <div class="more-results-item-sub-title float-r text-al-l">Считай заранее</div>
+                                <div class="more-results-item-img float-l">
+                                  <img alt="pic" src="icons/4_plan.svg">
+                                </div>
+                                <div class="more-results-item-text text-al-l">
+                                    Планирование дает нам четкие KPI,
+                                    придерживаясь их,
+                                    мы добиваемся успеха.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+      <section id="pricing" class="pricing bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-title">цены на услуги</h2>
+                </div>
+            </div>
+            <div class="slider responsive">
+                <div class="slider__item">
+                    <div class="pricing-item">
+                        <div class="pricing-item-sub-name">
+                            Тариф
+                        </div>
+                        <div class="pricing-item-name">
+                            Региональный
+                        </div>
+                        <div class="pricing-item-slash">-</div>
+                        <div class="pricing-item-text">Для региональных сайтов услуг. Стандартная оптимизация по
+                            чек-листу.
+                        </div>
+                        <div class="pricing-item-price">от 30 000 ₽</div>
+                        <div class="pricing-item-button" data-toggle="modal" data-target="#modalTakeOffer" data-offer-name="Региональный">Заказать
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="pricing-item">
+                        <div class="pricing-item-sub-name">
+                            Тариф
+                        </div>
+                        <div class="pricing-item-name">
+                            Сайт услуг
+                        </div>
+                        <div class="pricing-item-slash">-</div>
+                        <div class="pricing-item-text">Работа по относительно узкой семантике. Тут важно понимать,
+                            что относительно узкая в нашем понимании - это крайне широкая для большинства.
+                        </div>
+                        <div class="pricing-item-price">от 40 000 ₽</div>
+                        <div class="pricing-item-button" data-toggle="modal" data-target="#modalTakeOffer" data-offer-name="Сайт услуг">Заказать
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="pricing-item">
+                        <div class="pricing-item-sub-name">
+                            Тариф
+                        </div>
+                        <div class="pricing-item-name">
+                            Интернет-магазин
+                        </div>
+                        <div class="pricing-item-slash">-</div>
+                        <div class="pricing-item-text">Увеличение видимости по <br>
+                            большому семантическому ядру.<br>
+                            Работы по повышению<br>
+                            конверсионности.
+                        </div>
+                        <div class="pricing-item-price">от 60 000 ₽</div>
+                        <div class="pricing-item-button" data-toggle="modal" data-target="#modalTakeOffer" data-offer-name="Интернет-магазин">Заказать
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="pricing-item">
+                        <div class="pricing-item-sub-name">
+                            Тариф
+                        </div>
+                        <div class="pricing-item-name">
+                            Агрегатор
+                        </div>
+                        <div class="pricing-item-slash">-</div>
+                        <div class="pricing-item-text">Работы с очень большими <br>
+                            семантическими ядрами. Повышение <br>
+                            поведенческих факторов.<br>
+                            "Окупирование" локальной выдачи.
+                        </div>
+                        <div class="pricing-item-price">от 100 000 ₽</div>
+                        <div class="pricing-item-button" data-toggle="modal" data-target="#modalTakeOffer" data-offer-name="Агрегатор">Заказать
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="pricing-item">
+                        <div class="pricing-item-sub-name">
+                            Тариф
+                        </div>
+                        <div class="pricing-item-name">
+                            Региональный
+                        </div>
+                        <div class="pricing-item-slash">-</div>
+                        <div class="pricing-item-text">Для региональных сайтов услуг. Стандартная оптимизация по
+                            чек-листу.
+                        </div>
+                        <div class="pricing-item-price">от 30 000 ₽</div>
+                        <div class="pricing-item-button" data-toggle="modal" data-target="#modalTakeOffer" data-offer-name="Региональный">Заказать
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="pricing-item">
+                        <div class="pricing-item-sub-name">
+                            Тариф
+                        </div>
+                        <div class="pricing-item-name">
+                            Сайт услуг
+                        </div>
+                        <div class="pricing-item-slash">-</div>
+                        <div class="pricing-item-text">Работа по относительно узкой семантике. Тут важно понимать,
+                            что относительно узкая в нашем понимании - это крайне широкая для большинства.
+                        </div>
+                        <div class="pricing-item-price">от 40 000 ₽</div>
+                        <div class="pricing-item-button" data-toggle="modal" data-target="#modalTakeOffer" data-offer-name="Сайт услуг">Заказать
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="pricing-item">
+                        <div class="pricing-item-sub-name">
+                            Тариф
+                        </div>
+                        <div class="pricing-item-name">
+                            Интернет-магазин
+                        </div>
+                        <div class="pricing-item-slash">-</div>
+                        <div class="pricing-item-text">Увеличение видимости по <br>
+                            большому семантическому ядру.<br>
+                            Работы по повышению<br>
+                            конверсионности.
+                        </div>
+                        <div class="pricing-item-price">от 60 000 ₽</div>
+                        <div class="pricing-item-button" data-toggle="modal" data-target="#modalTakeOffer" data-offer-name="Интернет-магазин">Заказать
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="pricing-item">
+                        <div class="pricing-item-sub-name">
+                            Тариф
+                        </div>
+                        <div class="pricing-item-name">
+                            Агрегатор
+                        </div>
+                        <div class="pricing-item-slash">-</div>
+                        <div class="pricing-item-text">Работы с очень большими <br>
+                            семантическими ядрами. Повышение <br>
+                            поведенческих факторов.<br>
+                            "Окупирование" локальной выдачи.
+                        </div>
+                        <div class="pricing-item-price">от 100 000 ₽</div>
+                        <div class="pricing-item-button" data-toggle="modal" data-target="#modalTakeOffer" data-offer-name="Агрегатор">Заказать
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>     
+    
+  </div>
+
+
+
+
+<!-- footer -->
+<footer id="colophon" class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-2 order-2 order-lg-1">
+        <div class="footer-logo">
+          <a href=""><img alt="pic" src="img/logo_footer.png"></a>
+          <span class="copyright">© ant-team.ru, 2018</span>
         </div>
       </div>
-    </footer>
-    <!-- #colophon -->
+      <div class="col-12 col-sm-6 col-md-3 order-2 order-lg-2">
+        <ul class="footer-nav">
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Услуги</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">О компании</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Портфолио</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Блог</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4 order-4 order-lg-3">
+        <div class="footer-contacts-block">
+            <div class="footer-phone"><a class="gtmFooterPhone" href="tel:+78126034188">+7 (812) 603 41 88</a><span>(Офис в Санкт-Петербурге)</span></div>
+            <div class="footer-phone"><a href="tel:88006038143">8 800 603 81 43</a><span>(Бесплатно по России)</span></div>
+        </div>
+      </div>
 
-
-
+      <div class="col-lg-3 col-md-12 order-1 order-lg-4">
+          <div class="footer-calc-button-block" data-toggle="modal" data-target="#modalTakePrice">
+              <span class="mob_block mob_color gtmGetPriceFooter">Позвонить нам</span>
+              <span class="mob_color gtmGetPriceFooter">Рассчитать стоимость</span>
+          </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- #colophon -->
 
 <!-- Modal -->
 <div class="modal fade" id="modalTakePrice" tabindex="-1" role="dialog" aria-labelledby="modalTakePriceTitle"
@@ -261,7 +777,7 @@
 </div>
 
 <!-- Modal audits-->
-  <div class="modal fade" id="modalTakeAuditsExample" tabindex="-1" role="dialog"
+<div class="modal fade" id="modalTakeAuditsExample" tabindex="-1" role="dialog"
      aria-labelledby="modalTakeAuditsExampleTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -292,12 +808,17 @@
             </div>
         </div>
     </div>
-  </div>
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="libs/slick/slick.min.js"></script>
+<script src="libs/maskedinput/maskedinput.js"></script>
 <script src="js/custom.js"></script>
 </body>
 </html>
