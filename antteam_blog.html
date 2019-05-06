@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Блог</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Блог</title>
+  <link rel="stylesheet" href="libs/fontawesome/font-awesome.css">
   <link rel="icon" href="https://ant-team.ru/wp-content/uploads/2018/11/favicon.jpg" sizes="32x32" />
   <link rel="icon" href="https://ant-team.ru/wp-content/uploads/2018/11/favicon.jpg" sizes="192x192" />
   <link rel="apple-touch-icon-precomposed" href="https://ant-team.ru/wp-content/uploads/2018/11/favicon.jpg" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="libs/slick/slick-theme.css">
   <link rel="stylesheet" href="css/main.css">
+  <!-- <link rel="stylesheet" href="css/all.css"> -->
 </head>
 <body>
 	<div class="blog-page sticy_footer_wrapper">
@@ -27,11 +31,11 @@
 						<div class="logo-box">
 							<img src="img/logo.png" alt="логотип">
 						</div>
-						<div class="calc-block">
-							<a href="#" class="calc-block__link">
-									рассчитать стоимость
-							</a>	
-						</div>
+			            <div class="calc-block">
+			              <a class="calc-block__link" data-toggle="modal" data-target="#modalTakePrice">
+			                  <span class="gtmGetPriceCenter">Раcсчитать стоимость</span>
+			              </a>  
+			            </div>
 						<div class="header-burger-menu">
 							<span></span>
 							<span></span>
@@ -472,7 +476,7 @@
 				</div>
 			</div>
 		</div> <!-- /offer -->
-</div>
+	</div>
 
 
 	<footer id="colophon" class="site-footer bg-black">
@@ -518,8 +522,151 @@
 			</div>
 		</div>
 	</footer><!-- #colophon -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalTakePrice" tabindex="-1" role="dialog" aria-labelledby="modalTakePriceTitle"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-title" >Рассчитать стоимость продвижения</div>
+                <div role="form" class="wpcf7" id="wpcf7-f104-o1" lang="ru-RU" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="/#wpcf7-f104-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="104" />
+<input type="hidden" name="_wpcf7_version" value="5.1.1" />
+<input type="hidden" name="_wpcf7_locale" value="ru_RU" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f104-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="0" />
+<input type="hidden" name="g-recaptcha-response" value="" />
+</div>
+<p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required gtmPriceFormName" aria-required="true" aria-invalid="false" placeholder="Имя (Василий)" /></span><span class="wpcf7-form-control-wrap your-site"><input type="url" name="your-site" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-url wpcf7-validates-as-url gtmPriceFormUrl" aria-invalid="false" placeholder="Сайт (www.site.ru)" /></span><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email gtmPriceFormEmail" aria-required="true" aria-invalid="false" placeholder="Почта (your@site.ru)" /></span><span class="wpcf7-form-control-wrap your-phone"><input type="text" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7mf-mask wpcf7-mask gtmPriceFormPhone" aria-invalid="false" placeholder="+7 (___) ___-__-__" data-mask="+7 (___) ___-__-__" /></span><input type="submit" value="Рассчитать стоимость" class="wpcf7-form-control wpcf7-submit gtmGetPriceFormSubmit" /></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>                <div class="policy-konf">
+                    Отправляя форму вы соглашаетесь с <a  target="_blank" href="/politika-konfidentsialnosti/">политикой конфиденциальности</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal take free audit -->
+<div class="modal fade" id="modalTakeFreeAudit" tabindex="-1" role="dialog"
+     aria-labelledby="modalTakeFreeAuditTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-title">Заказать бесплатный аудит</div>
+                <div class="modal-text">Заполните форму,
+                    и, сделав анализ вашего сайта,
+                    мы сразу свяжемся с вами!
+                </div>
+                <div role="form" class="wpcf7" id="wpcf7-f105-o2" lang="ru-RU" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="/#wpcf7-f105-o2" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="105" />
+<input type="hidden" name="_wpcf7_version" value="5.1.1" />
+<input type="hidden" name="_wpcf7_locale" value="ru_RU" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f105-o2" />
+<input type="hidden" name="_wpcf7_container_post" value="0" />
+<input type="hidden" name="g-recaptcha-response" value="" />
+</div>
+<p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required gtmFreeAuditFormName" aria-required="true" aria-invalid="false" placeholder="Имя (Василий)" /></span><span class="wpcf7-form-control-wrap your-site"><input type="url" name="your-site" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-url wpcf7-validates-as-required wpcf7-validates-as-url gtmFreeAuditUrl" aria-required="true" aria-invalid="false" placeholder="Сайт (www.site.ru)" /></span><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email gtmFreeAuditEmail" aria-required="true" aria-invalid="false" placeholder="Почта (your@site.ru)" /></span><span class="wpcf7-form-control-wrap your-phone"><input type="text" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7mf-mask wpcf7-mask gtmFreeAuditFormPhone" aria-invalid="false" placeholder="+7 (___) ___-__-__" data-mask="+7 (___) ___-__-__" /></span><input type="submit" value="Заказать аудит" class="wpcf7-form-control wpcf7-submit gtmGetFreeFormSubmit g-recaptcha" /></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>                <div class="policy-konf">
+                    Отправляя форму вы соглашаетесь с <a target="_blank"  href="/politika-konfidentsialnosti/">политикой конфиденциальности</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal take ntcn ntcn ntcn offer-->
+<div class="modal fade" id="modalTakeOffer" tabindex="-1" role="dialog" aria-labelledby="modalTakeOfferTitle"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-title">Заказать продвижениеasdasd</div>
+                <div class="modal-text"></div>
+                <div role="form" class="wpcf7" id="wpcf7-f106-o3" lang="ru-RU" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="/#wpcf7-f106-o3" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="106" />
+<input type="hidden" name="_wpcf7_version" value="5.1.1" />
+<input type="hidden" name="_wpcf7_locale" value="ru_RU" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f106-o3" />
+<input type="hidden" name="_wpcf7_container_post" value="0" />
+<input type="hidden" name="g-recaptcha-response" value="" />
+</div>
+<p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required gtmOfferFormName" aria-required="true" aria-invalid="false" placeholder="Имя (Василий)" /></span><span class="wpcf7-form-control-wrap your-site"><input type="url" name="your-site" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-url wpcf7-validates-as-required wpcf7-validates-as-url gtmOfferFormUrl" aria-required="true" aria-invalid="false" placeholder="Сайт (www.site.ru)" /></span><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email gtmOfferFormEmail" aria-required="true" aria-invalid="false" placeholder="Почта (your@site.ru)" /></span><span class="wpcf7-form-control-wrap your-phone"><input type="text" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7mf-mask wpcf7-mask gtmOfferFormPhone" aria-invalid="false" placeholder="+7 (___) ___-__-__" data-mask="+7 (___) ___-__-__" /></span><span class="wpcf7-form-control-wrap classgtmOfferFormText"><input type="text" name="class:gtmOfferFormText" value="" size="40" class="wpcf7-form-control wpcf7-text hidden" aria-invalid="false" /></span><input type="submit" value="Заказать продвижение" class="wpcf7-form-control wpcf7-submit gtmGetSeoFormSubmit" /></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>                <div class="policy-konf">
+                    Отправляя форму вы соглашаетесь с <a target="_blank"  href="/politika-konfidentsialnosti/">политикой конфиденциальности</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal audits-->
+<div class="modal fade" id="modalTakeAuditsExample" tabindex="-1" role="dialog"
+     aria-labelledby="modalTakeAuditsExampleTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-title">Примеры бесплатных аудитов:</div>
+                <div class="row">
+                    <div class="col-md-4"><a class="gtmGetFreeAuditOne"
+                                             href="https://docs.google.com/document/d/1WZy25zIWRvyALqhTt5B1L3f-gcmm5MEhZOhB1mCvpN0"
+                                             target="_blank"><i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            <span>mc-avanta.ru</span></a></div>
+                    <div class="col-md-4"><a class="gtmGetFreeAuditSec"
+                                             href="https://docs.google.com/document/d/1g5OD324D4otJYaiUSLH51XwLC5evbQePQhZ_L-q3NwI"
+                                             target="_blank"><i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            <span>kiparis-spb.ru</span></a></div>
+
+                    <div class="col-md-4"><a class="gtmGetFreeAuditThird"
+                                             href="https://docs.google.com/document/d/1R7Jskw_rJLtMRqMJHfWB2ATOT5qZdCo-_8bqY_CtSv4"
+                                             target="_blank"><i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            <span>ncagp.ru</span></a></div>
+                </div>
+            </div>
+            <div class="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="js/custom.js"></script></body>
+
+<script src="libs/slick/slick.min.js"></script>
+<script src="libs/maskedinput/maskedinput.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
 </html>

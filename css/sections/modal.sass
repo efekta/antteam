@@ -1,15 +1,103 @@
-// modal
-div#modalTakeAuditsExample i
-    font-size: 70px
-    display: block
-    text-align: center
-    margin: 30px 0 10px
-.fa-file-text-o:before
-    content: "\f0f6"
-.fa
-    display: inline-block
-    font: normal normal normal 14px/1 FontAwesome
-    font-size: inherit
-    text-rendering: auto
-    -webkit-font-smoothing: antialiased
-    -moz-osx-font-smoothing: grayscale
+.modal-open .modal.fade.show 
+  display: flex !important
+  justify-content: center
+  align-items: center
+  z-index: 10000000
+
+
+.close:not(:disabled):not(.disabled) 
+  font-size: 40px
+  margin-top: -70px
+  margin-right: -60px
+  color: #fff
+  opacity: 1
+
+
+.modal-content 
+  background: unset
+  border: none
+
+
+.modal-header 
+  margin: 0
+  height: 0
+  border: none
+  padding: 0 !important
+
+
+.modal-body 
+  background: #fff
+  width: 500px
+
+
+.modal-title 
+  text-align: center
+  font-size: 18pt
+  font-family: 'Open Sans Semi Bold', sans-serif
+  text-transform: uppercase
+  line-height: 22px !important
+
+
+.modal-text 
+  text-align: center
+  font-size: 10pt
+  font-family: 'Open Sans Semi Bold', sans-serif
+  text-transform: uppercase
+  margin: 10px
+
+
+.modal-body input[type="text"], 
+.modal-body input[type="email"], 
+.modal-body input[type="url"] 
+  height: 50px
+  width: 300px
+  margin: 10px auto 0
+  display: block
+  padding: 5px 10px
+
+
+.modal-body input.wpcf7-form-control.wpcf7-submit 
+  height: 50px
+  width: 300px
+  margin: 10px auto
+  display: block
+  color: #f4f44a
+  font-size: 15px
+  text-transform: uppercase
+  font-family: 'Open Sans Semi Bold', sans-serif
+  background: url('../img/calc-ico.png') #000
+  background-repeat: no-repeat
+  background-position: 10px 10px
+
+
+div#modalTakeAuditsExample i 
+  font-size: 70px
+  display: block
+  text-align: center
+  margin: 30px 0 10px
+
+
+div#modalTakeAuditsExample span 
+  width: 100%
+  display: block
+  text-align: center
+
+
+.header-default-top-block 
+  height: 100px
+
+
+.header-default-top-block img 
+  max-height: 100px
+
+
+.header-default-top-block .header-calc-block 
+  margin-top: 40px
+
+
+.policy-konf 
+  width: 300px
+  margin: auto
+  text-align: center
+
+
