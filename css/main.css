@@ -116,13 +116,15 @@ div#modalTakeAuditsExample span { width: 100%; display: block; text-align: cente
 
 .header_fixed.main-head .logo-box { width: 200px; margin: 0 auto; -webkit-transition: .5s; -o-transition: .5s; transition: .5s; }
 
-.main-head > .container { max-width: 1500px; margin: auto; }
+.blog-page .header_fixed.main-head .logo-box { width: 170px; margin: 0 auto; -webkit-transition: .5s; -o-transition: .5s; transition: .5s; }
+
+.main_page .main-head > .container { max-width: 1500px; margin: auto; }
+
+.blog-page > .main-head { max-width: 100%; margin: auto; }
 
 .header-phone { display: inline-block; text-align: left; margin-right: 20px; }
 
-.header-phone a { display: block; text-align: center; font-size: 16px; font-family: 'Open Sans Semi Bold', sans-serif; color: #000; }
-
-.header-phone a { font-size: 20px; font-weight: 600; }
+.header-phone a { display: block; text-align: center; font-family: 'Open Sans Semi Bold', sans-serif; color: #000; color-font-size: 20px; color-font-weight: 600; }
 
 .header-phone span { font-size: 12px; }
 
@@ -286,7 +288,7 @@ ol.flex-control-nav.flex-control-paging { bottom: 0; z-index: 10000; }
 
 .pricing { margin-bottom: 70px; }
 
-.pricing-item { background: #eae9ea; text-align: center; padding: 30px 10px 20px 10px; margin: 20px 20px 20px 20px; }
+.pricing-item { background: #eae9ea; text-align: center; padding: 30px 10px 20px 10px; margin: 20px 10px 20px 10px; }
 
 .pricing-item-sub-name { font-family: 'Open Sans Semi Bold', sans-serif; color: #3e81c3; font-size: 10pt; }
 
