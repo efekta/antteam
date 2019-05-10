@@ -499,7 +499,7 @@ a.tag-cloud__item { font-weight: normal; font-family: sans-serif; }
 
 .jq-selectbox__dropdown { width: 100% !important; }
 
-.select { position: relative; width: 100%; height: 50px; height-padding: 0 47px 15px 15px; line-height: 50px; background: transparent; border: none; outline: none; cursor: pointer; }
+.select { position: relative; width: 100%; height: 50px; background: transparent; border: none; outline: none; cursor: pointer; line-height: 50px; }
 
 select::-ms-expand { display: none; }
 
