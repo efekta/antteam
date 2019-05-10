@@ -59,7 +59,7 @@ $(document).ready(function(){
 select
  =======================*/ 
  $(".property-value").on('click', function() {
- 	$(".select-svg-ico").toggleClass("select-svg-ico-active");
+ 	$(".jq-selectbox__trigger-arrow").toggleClass("jq-selectbox__trigger-arrow_active");
  });
 
 $(function() {

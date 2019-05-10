@@ -499,7 +499,7 @@ a.tag-cloud__item { font-weight: normal; font-family: sans-serif; }
 
 .jq-selectbox__dropdown { width: 100% !important; }
 
-.select { position: relative; width: 100%; width-background: transparent; width-border: none; width-height: 50px; width-line-height: 50px; width-outline: none; cursor: pointer; }
+.select { position: relative; width: 100%; height: 50px; height-padding: 0 47px 15px 15px; line-height: 50px; background: transparent; border: none; outline: none; cursor: pointer; }
 
 select::-ms-expand { display: none; }
 
@@ -507,15 +507,13 @@ select::-ms-expand { display: none; }
 
 .jq-selectbox li.selected { color: #000; }
 
-.jq-selectbox__trigger-arrow { position: absolute; top: 0; right: 0; width: 100%; height: 100%; }
+.jq-selectbox__trigger-arrow { position: absolute; top: 0; right: 0; width: 100%; height: 100%; background-image: url("../img/down.png"); background-repeat: no-repeat; background-position-y: 50%; background-position-x: 95%; }
 
 .jq-selectbox__dropdown { margin: 5px 0 0; }
 
-.select-svg-ico { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 50px; height: 51px; padding: 10px; color: #c5cdd5; position: absolute; right: 0; top: 0; z-index: -1; cursor: pointer; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
+.jq-selectbox__trigger-arrow_active { background-image: url("../img/down-blue.png"); background-repeat: no-repeat; background-position-y: 50%; background-position-x: 95%; }
 
-.property-value:hover .select-svg-ico { color: #3e81c3; }
-
-.select-svg-ico-active { color: #3e81c3; -webkit-transform: rotate(-180deg); -ms-transform: rotate(-180deg); transform: rotate(-180deg); }
+.property-value:hover .jq-selectbox__trigger-arrow { background-image: url("../img/down-blue.png"); background-repeat: no-repeat; background-position-y: 50%; background-position-x: 95%; }
 
 .article-page_bg { background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; min-height: 740px; position: relative; padding-top: 30px; }
 
