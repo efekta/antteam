@@ -63,9 +63,9 @@ select
  });
 
 $(function() {
-
-  $('select').styler();
-
+  if($('select').length > 0) {
+  	$('select').styler();
+  }
 
 });
 /*========================
@@ -73,4 +73,5 @@ end select
  =======================*/ 
 
 }); //end document ready function
+
 
