@@ -54,5 +54,23 @@ $(document).ready(function(){
 	    }
 	  ]
 	});
+
+	/*========================
+select
+ =======================*/ 
+ $(".property-value").on('click', function() {
+ 	$(".select-svg-ico").toggleClass("select-svg-ico-active");
+ });
+
+$(function() {
+
+  $('select').styler();
+
+
+});
+/*========================
+end select
+ =======================*/ 
+
 }); //end document ready function
 
