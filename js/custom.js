@@ -33,44 +33,40 @@ $(document).ready(function(){
 	    {
 	      breakpoint: 1024,
 	      settings: {
-	        slidesToShow: 2,
-	        infinite: true,
-	        arrows: true
+	        slidesToShow: 2
 	      }
 	    },
 	    {
 	      breakpoint: 600,
 	      settings: {
-	        slidesToShow: 1,
-	        arrows: true
+	        slidesToShow: 1
 	      }
 	    },
 	    {
 	      breakpoint: 480,
 	      settings: {
-	        slidesToShow: 1,
-	        arrows: true
+	        slidesToShow: 1
 	      }
 	    }
 	  ]
 	});
 
 	/*========================
-select
- =======================*/ 
- $(".property-value").on('click', function() {
- 	$(".jq-selectbox__trigger-arrow").toggleClass("jq-selectbox__trigger-arrow_active");
- });
+	select
+	 =======================*/ 
+	 $(".property-value").on('click', function() {
+	 	$(".jq-selectbox__trigger-arrow").toggleClass("jq-selectbox__trigger-arrow_active");
+	 });
 
-$(function() {
-  if($('select').length > 0) {
-  	$('select').styler();
-  }
+	$(function() {
+	  if($('select').length > 0) {
+	  	$('select').styler();
+	  }
 
-});
-/*========================
-end select
- =======================*/ 
+	});
+	/*========================
+	end select
+	 =======================*/ 
 
 }); //end document ready function
 

@@ -129,7 +129,7 @@
 		display: none
 
 	.acticle-title
-		padding: 85px 0 65px 0
+		padding: 85px 30px 65px 30px
 		font-size: 22px
 
 
@@ -172,6 +172,7 @@
 
 	.header-calc-button-block
 		width: 100%
+		text-align: center
 
 	footer#colophon a
 		color: #fff
@@ -254,8 +255,15 @@
 	.article-page_bg .article-info__footer-item.date
 		width: auto
 		margin-top: 0
-	.article-info__footer__reverse
-		flex-direction: row-reverse
+		order: 1
+	.article-page_bg .article-info__footer-item.smile
+		order: 2
+	.article-page_bg .article-info__footer-item.eye
+		order: 3
+	.article-page_bg .article-info__footer-item.comment
+		order: 4
+	.article-page_bg .article-info__footer.article-info__footer__bet
+		justify-content: space-between
 	.article-page_bg .article-info__footer-item svg
 		margin-right: 5px
 		font-size: 22px
@@ -265,9 +273,11 @@
 	.article-page_bg .acticle-page-socials__list,
 	.article-page_bg .acticle-page-socials
 		justify-content: center
+	.article-page_bg .article-info__footer-item
+		margin-right: 0
 
-
-
+	.article-page_bg .article-page-socials-wrapp
+		padding-top: 30px
 
 
 
