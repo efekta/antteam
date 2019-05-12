@@ -14,3 +14,13 @@
 	Статья
 	</a>
 </p>
+<p>
+	<a href="https://efekta.github.io/antteam/404.html">
+	404
+	</a>
+</p>
+<p>
+	<a href="https://efekta.github.io/antteam/inner.html">
+	Пустая страница
+	</a>
+</p>
