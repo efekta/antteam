@@ -78,6 +78,8 @@ ul, ol { margin: 0; padding: 0; }
 
 footer { -ms-flex-negative: 0; flex-shrink: 0; }
 
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+
 body, button, input, select, optgroup, textarea { color: #404040; font-family: sans-serif; font-size: 16px; font-size: 1rem; line-height: 1.5; }
 
 button, input[type="button"], input[type="reset"], input[type="submit"] { border: 1px solid; border-color: #ccc #ccc #bbb; border-radius: 3px; background: #e6e6e6; color: rgba(0, 0, 0, 0.8); font-size: 12px; font-size: 0.75rem; line-height: 1; padding: .6em 1em .4em; }
@@ -113,6 +115,8 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 footer { background-color: #161616; }
 
 .mob_block { display: none; }
+
+p { color: #000; }
 
 .section-title { text-align: center; padding: 40px 0 20px; font-size: 30pt; font-family: 'Open Sans Semi Bold', sans-serif; text-transform: uppercase; font-weight: 600; }
 
@@ -585,7 +589,7 @@ p.article-content__list__title { font-weight: 500; text-transform: uppercase; fo
 
 .article-content__item_list li::before { content: ''; width: 5px; height: 5px; position: absolute; left: 0; top: 50%; border-radius: 50%; background: #6095cb; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 
-.article-content__item__inner_p { padding: 0 0 15px 0; margin: 0; }
+.article-content__item__inner_p { padding: 0 0 20px 0; margin: 0; }
 
 .article-content__item__inner_p a { color: #6095cb; text-decoration: underline; font-size: 14px; font-weight: normal; }
 
@@ -593,11 +597,17 @@ p.article-content__list__title { font-weight: 500; text-transform: uppercase; fo
 
 .article-page-blockquote::before { content: ''; position: absolute; top: 0; left: 0; width: 23px; height: 17px; background: url("../img/citata.png") no-repeat; }
 
-.article-page-blockquote blockquote { position: relative; padding-left: 25px; }
+.article-page-blockquote blockquote { position: relative; padding-left: 25px; font-weight: 600; font-style: italic; }
 
 .article-page-blockquote blockquote::before { content: ''; position: absolute; top: 0; left: 0; width: 8px; height: 100%; background: #f4f44a; }
 
-.article-page-blockquote cite { width: 100%; display: block; text-align: right; font-size: 12px; font-weight: 600; }
+.article-page-blockquote cite { width: 100%; display: block; text-align: right; font-size: 12px; font-weight: 600; margin-bottom: 30px; font-style: normal; }
+
+.pt-30 { padding-top: 30px; }
+
+.article-content__picture { height: 365px; width: 100%; text-align: right; }
+
+.article-content__picture figcaption { padding: 25px 0; font-size: 12px; font-weight: 600; }
 
 footer#colophon { padding: 40px 0 40px 0; color: #fff; }
 
