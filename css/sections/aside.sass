@@ -1,0 +1,81 @@
+.article-main
+	position: relative
+	padding-top: 50px
+.aside
+	width: 360px
+	position: absolute
+	top: 50px
+	left: 0
+.aside_fixed
+    position: fixed
+    top: 186px
+
+.article-page-main
+	width: calc(75% - 360px)
+	margin-left: auto
+	margin-right: auto
+	padding: 0 20px
+.aside-nav-list
+	position: relative
+	padding: 10px 0
+.aside-nav-list::before
+	content: ''
+	position: absolute
+	top: 0
+	left: 0
+	width: 56px
+	height: 100%
+	background-color: rgb(142, 208, 239)
+	border-top-right-radius: 30px
+	border-bottom-right-radius: 30px
+
+.aside-nav-list__item
+	position: relative
+	margin-left: 65px
+
+.aside-nav-list__link
+	position: relative
+	display: block
+	padding: 8px
+	font-size: 12px
+	text-decoration: underline
+	border-radius: 3px
+
+.aside-nav-list__link::before
+	content: ''
+	position: absolute
+	top: 0
+	left: -8px
+	width: 0 
+	height: 0
+	border-top: 16px solid transparent
+	border-right: 15px solid transparent
+	border-bottom: 20px solid transparent
+
+.aside-nav-list__link:hover
+	background-color: rgb(244, 244, 74)
+	color: #000
+	text-decoration: none
+
+
+.aside-nav-list__link:hover::before
+	content: ''
+	position: absolute
+	top: 0
+	left: -8px
+	width: 0 
+	height: 0
+	border-top: 16px solid transparent
+	border-right: 15px solid rgb(244, 244, 74)
+	border-bottom: 20px solid transparent
+
+
+.aside-nav-list__link::after
+	content: ''
+	position: absolute
+	top: 13px
+	left: -45px
+	width: 8px 
+	height: 8px
+	background: #000
+	border-radius: 50%

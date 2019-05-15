@@ -19,8 +19,31 @@ $(document).ready(function(){
 	    }, 800);
 	    return false;
 	  	});
+	/*================================
+		плавный скролл до якоря jquery
+	=================================*/
+	$("body").on('click', '[href*="#"]', function(e){
+		  var fixed_offset = 100;
+		  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+		  e.preventDefault();
+		});
+
+	/*================================
+	плавный скролл до якоря aside
+	=================================*/
+	$(window).scroll(function() {
+		if($(this).scrollTop() > $("div.article-page_bg").height()) {
+			$('.aside').addClass('aside_fixed');
+		}
+		else{
+			$('.aside').removeClass('aside_fixed');
+		}
+	});
 
 
+	/*================================
+	slider
+	=================================*/
 	$('.slider').slick({
 	  dots: false,
 	  arrows: true,

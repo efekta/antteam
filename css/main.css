@@ -166,8 +166,6 @@ div#modalTakeAuditsExample span { width: 100%; display: block; text-align: cente
 
 .blog-page .header_fixed.main-head .logo-box { width: 170px; margin: 0 auto; -webkit-transition: .5s; -o-transition: .5s; transition: .5s; }
 
-.main_page .main-head > .container { max-width: 1500px; margin: auto; }
-
 .blog-page > .main-head { max-width: 100%; margin: auto; }
 
 .header-phone { display: inline-block; text-align: left; margin-right: 20px; }
@@ -198,7 +196,33 @@ div#modalTakeAuditsExample span { width: 100%; display: block; text-align: cente
 
 .breadcrumb-item.active { color: #8ed0ef; }
 
+.article-main { position: relative; padding-top: 50px; }
+
+.aside { width: 360px; position: absolute; top: 50px; left: 0; }
+
+.aside_fixed { position: fixed; top: 186px; }
+
+.article-page-main { width: calc(75% - 360px); margin-left: auto; margin-right: auto; padding: 0 20px; }
+
+.aside-nav-list { position: relative; padding: 10px 0; }
+
+.aside-nav-list::before { content: ''; position: absolute; top: 0; left: 0; width: 56px; height: 100%; background-color: #8ed0ef; border-top-right-radius: 30px; border-bottom-right-radius: 30px; }
+
+.aside-nav-list__item { position: relative; margin-left: 65px; }
+
+.aside-nav-list__link { position: relative; display: block; padding: 8px; font-size: 12px; text-decoration: underline; border-radius: 3px; }
+
+.aside-nav-list__link::before { content: ''; position: absolute; top: 0; left: -8px; width: 0; height: 0; border-top: 16px solid transparent; border-right: 15px solid transparent; border-bottom: 20px solid transparent; }
+
+.aside-nav-list__link:hover { background-color: #f4f44a; color: #000; text-decoration: none; }
+
+.aside-nav-list__link:hover::before { content: ''; position: absolute; top: 0; left: -8px; width: 0; height: 0; border-top: 16px solid transparent; border-right: 15px solid #f4f44a; border-bottom: 20px solid transparent; }
+
+.aside-nav-list__link::after { content: ''; position: absolute; top: 13px; left: -45px; width: 8px; height: 8px; background: #000; border-radius: 50%; }
+
 .main_page { background-color: #8ed0ef; color: #000; }
+
+.page { color: #000; }
 
 .bg-blue { background-color: #8ed0ef; }
 
@@ -557,8 +581,6 @@ select::-ms-expand { display: none; }
 
 .article-page .subscribe { margin-bottom: 0; }
 
-.article-content-wrapp { padding-top: 55px; }
-
 .article-content__title { font-size: 36px; color: #3e81c3; text-transform: uppercase; }
 
 .article-content__item { font-size: 18px; color: #000; margin-bottom: 88px; }
@@ -613,7 +635,7 @@ p.article-content__list__title { font-weight: 600; text-transform: uppercase; fo
 
 .article-content-gray { background: #e5e5e5; padding: 20px 15px; }
 
-.article-content-gray p { margin-bottom: 0; font-weight: 600; font-size: 18px; }
+.article-content-gray p { margin-bottom: 0; font-weight: 600; font-size: 18px; font-style: italic; }
 
 .article-socials { margin-top: -88px; padding: 20px 0; border-top: 1px solid #888888; }
 
@@ -745,6 +767,18 @@ span.copyright { font-size: 10pt; color: #fff; margin: 15px 0 0; display: inline
   .article-autor { background: transparent; border-radius: 0; padding: 0; margin-bottom: 30px; }
   .article-autor__links p { margin-bottom: 0; }
   .article-autor__links a { color: #3e81c3; border-bottom: 1px dashed #3e81c3; }
-  .article-autor__links a:hover { color: #3e81c3; border-bottom: 1px dashed transparent; } }
+  .article-autor__links a:hover { color: #3e81c3; border-bottom: 1px dashed transparent; }
+  .header-scroll-block { margin: 10px auto; text-align: center; padding: 20px; margin-bottom: 10px; }
+  .aside { width: 100%; position: static; margin-bottom: 30px; }
+  .article-page-main { width: 100%; }
+  .article-content__title { font-size: 20px; }
+  p.article-content__list__title { font-size: 14px; }
+  .article-content__item { margin-bottom: 30px; }
+  .article-page-blockquote { padding-left: 0; }
+  .article-page-blockquote blockquote::before { width: 13px; top: 25px; }
+  .article-page-blockquote blockquote { font-size: 14px; }
+  .article-content-gray p { font-size: 14px; } }
+
+@media (max-width: 768px) { .aside { display: none; } }
 
 /*# sourceMappingURL=main.css.map */
