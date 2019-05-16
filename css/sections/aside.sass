@@ -8,10 +8,10 @@
 	left: 0
 .aside_fixed
     position: fixed
-    top: 186px
+    top: 86px
 
 .article-page-main
-	width: calc(75% - 360px)
+	width: calc(70% - 360px)
 	margin-left: auto
 	margin-right: auto
 	padding: 0 20px
@@ -32,7 +32,7 @@
 .aside-nav-list__item
 	position: relative
 	margin-left: 65px
-
+	// transition: all .3s
 .aside-nav-list__link
 	position: relative
 	display: block
@@ -40,6 +40,7 @@
 	font-size: 12px
 	text-decoration: underline
 	border-radius: 3px
+	// transition: all .3s
 
 .aside-nav-list__link::before
 	content: ''
@@ -79,3 +80,28 @@
 	height: 8px
 	background: #000
 	border-radius: 50%
+
+.aside-nav-list__link:hover::after
+	background: #fff
+
+.aside-nav-list__item.active .aside-nav-list__link::after
+	background: #fff
+
+.aside-nav-list__item.active .aside-nav-list__link::before
+	border-right: 15px solid rgb(244, 244, 74)
+
+.aside-nav-list__item.active .aside-nav-list__link
+	background-color: rgb(244, 244, 74)
+	color: #000
+	text-decoration: none
+
+
+
+
+
+
+
+
+
+
+

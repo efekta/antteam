@@ -3,10 +3,7 @@ html, body
     font-size: 16px
 
 body
-    display: -webkit-flex
-    display: -moz-flex
-    display: -ms-flex
-    display: -o-flex
+    position: relative
     display: flex
     flex-direction: column
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
@@ -165,3 +162,28 @@ footer
     right: -20px
 .arrow__next
     left: -20px
+
+
+body.overlay
+    overflow: hidden
+    // padding-right: 17px
+
+.overlay::before
+    content: ''
+    display: block
+    height: 100%
+    width: 100%
+    position: fixed
+    top: 0
+    background: rgba(0, 0, 0, 0.5)
+    z-index: 100
+    transition: all 300ms ease
+
+
+// body.overlay .header
+//     position: relative
+//     z-index: 999
+
+
+
+
