@@ -236,7 +236,7 @@ div#modalTakeAuditsExample span { width: 100%; display: block; text-align: cente
 
 #nav-icon.open span:nth-child(3) { -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); top: 22px; left: 0; }
 
-.page-nav-mob { width: 100%; background: #fff; position: fixed; top: 195px; left: 0; right: 0; -webkit-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
+.page-nav-mob { width: 100%; background: #fff; position: fixed; top: 195px; left: 0; right: 0; -webkit-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; opacity: 0; }
 
 .header.main-head.header_fixed .page-nav-mob { top: 95px; }
 
