@@ -131,8 +131,7 @@
     transform: rotate(-45deg)
     top: 22px
     left: 0
-// .page-nav 
-//     display: none
+
 .page-nav-mob
     width: 100%
     background: #fff
@@ -146,23 +145,47 @@
 .header.main-head.header_fixed .page-nav-mob
     top: 95px
 
-    
-.page-nav__list-mob
-    max-width: 1500px
-    margin: 0 auto
+.page-nav
     padding: 45px 15px
-    // transition: all .8s ease
+
+.page-nav h3
+    max-width: 1500px
+    margin: auto
+    margin-bottom: 20px
+    text-transform: uppercase
+
+.page-nav ul
+    max-width: 1500px
+    margin: auto
+
+.page-nav ul li
+    margin-bottom: 15px
+    // text-transform: uppercase
+
+.page-nav ul li a
+    display: block
+    margin-bottom: 25px
+    text-transform: uppercase
 
 
+.page-nav ul li > ul li
+    position: relative
+    padding-left: 38px
+    color: #888888
+.page-nav ul li > ul li::before
+    content: ''
+    position: absolute
+    top: 50%
+    left: 0
+    width: 15px
+    height: 1px
+    background: #888888
 .page-nav-mob_show
-    // top: 210px
-    // transition: all .8s ease
     opacity: 1
 .bread-crumbs
     padding: 30px 0 0 0
     margin-bottom: 30px
-
-    
+  
 .breadcrumb
 	background: transparent
 .breadcrumb-item

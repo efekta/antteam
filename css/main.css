@@ -240,7 +240,19 @@ div#modalTakeAuditsExample span { width: 100%; display: block; text-align: cente
 
 .header.main-head.header_fixed .page-nav-mob { top: 95px; }
 
-.page-nav__list-mob { max-width: 1500px; margin: 0 auto; padding: 45px 15px; }
+.page-nav { padding: 45px 15px; }
+
+.page-nav h3 { max-width: 1500px; margin: auto; margin-bottom: 20px; text-transform: uppercase; }
+
+.page-nav ul { max-width: 1500px; margin: auto; }
+
+.page-nav ul li { margin-bottom: 15px; }
+
+.page-nav ul li a { display: block; margin-bottom: 25px; text-transform: uppercase; }
+
+.page-nav ul li > ul li { position: relative; padding-left: 38px; color: #888888; }
+
+.page-nav ul li > ul li::before { content: ''; position: absolute; top: 50%; left: 0; width: 15px; height: 1px; background: #888888; }
 
 .page-nav-mob_show { opacity: 1; }
 
