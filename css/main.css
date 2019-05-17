@@ -800,7 +800,8 @@ span.copyright { font-size: 10pt; color: #fff; margin: 15px 0 0; display: inline
 @media (max-width: 1200px) { .search .form__input, .search .form__select, .search .form__btn { width: 100%; margin-bottom: 15px; }
   .footer-phone { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
   .footer-calc-button-block span { font-size: 12px; }
-  .main-head { max-width: 100%; } }
+  .main-head { max-width: 100%; }
+  .why-we-blocks { max-width: 100%; } }
 
 @media (max-width: 1170px) { .container { max-width: 100%; padding: 0 20px; }
   .arrow__prev { right: -10px; }
@@ -895,18 +896,20 @@ span.copyright { font-size: 10pt; color: #fff; margin: 15px 0 0; display: inline
 @media (max-width: 1026px) { #why-we .container { padding: 0; }
   #why-we .section-title, #why-we .section-sub-title { padding-left: 20px; padding-right: 20px; text-align: center; }
   .why-we__carousel { background-image: none; background-repeat: no-repeat; background-position: center; background-size: contain; height: auto; }
-  .why-we__carousel__item { text-align: center; margin: 0 15px 0 0; max-width: 126px; }
+  .why-we__carousel__item { text-align: center; max-width: 126px; }
   .why-we__carousel__item img { display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px; }
   .why-we__carousel__item p { color: #3e81c3; font-size: 12px; font-weight: bold; }
   .why-we-block:nth-child(1) { left: 0; top: 0; float: none; }
   .why-we-block:nth-child(2) { right: 0; top: 0; float: none; }
-  .why-we-block:nth-child(3) { left: 0; top: 0; float: none; } }
+  .why-we-block:nth-child(3) { left: 0; top: 0; float: none; }
+  .why-we-block:nth-child(4) { right: 0; top: 0; float: none; } }
 
 @media (max-width: 768px) { .aside { display: none; }
   .page-nav__box-wrapp { -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .page-nav__box { width: 100%; }
   .mob-phone_icon { display: block; width: 20px; height: 30px; }
-  .mob-phone_icon svg { display: block; width: 20px; height: 30px; } }
+  .mob-phone_icon svg { display: block; width: 20px; height: 30px; }
+  .footer_i_calc img { display: none; } }
 
 @media (max-width: 480px) { .header-calc-button-block { width: 100%; text-align: center; } }
 

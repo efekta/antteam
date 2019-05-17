@@ -122,21 +122,25 @@ $(document).ready(function(){
 	function mobileOnlySlider() {
 	    $(document).ready(function(){
 	        $('.why-we__carousel').slick({
-	        	centerMode: true,
-  				centerPadding: '60px',
+	        	// centerMode: true,
+  				// centerPadding: '0',
+  				// centerPadding: '0',
   				slidesToShow: 3,
 	            slidesToScroll: 1,
 	            autoplay: false,
 	            arrows: false,
 	            touchMove:true,
-	            variableWidth: true,
+	            // variableWidth: true,
 	            dots: false,
 	                pauseOnHover: false,
 	                responsive: [{
 	                    breakpoint: 768,
 	                    settings: {
+	                    	arrows: false,
+	                    	dots: false,
+	                    	variableWidth: true,
 	                    	centerMode: true,
-        					centerPadding: '100px',
+        					centerPadding: '0',
         					slidesToShow: 1,
 	                        settings:"unslick"
 	                }
@@ -162,10 +166,11 @@ $(document).ready(function(){
 	$(window).on('load resize', function() {
 	  if ($(window).width() < 1026) {
 	    $('.why-we__carousel__item:not(.slick-initialized)').slick({
-	      centerMode: true,
-	      dots: true,
+	      dots: false,
+	      arrows: false,
 	      infinite: true,
 	      speed: 100,
+	      variableWidth: true,
 	      slidesToShow: 1
 	    });
 	  } else {
