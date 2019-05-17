@@ -136,7 +136,7 @@ $(document).ready(function(){
 	                    breakpoint: 768,
 	                    settings: {
 	                    	centerMode: true,
-        					centerPadding: '40px',
+        					centerPadding: '100px',
         					slidesToShow: 1,
 	                        settings:"unslick"
 	                }
@@ -144,11 +144,11 @@ $(document).ready(function(){
 	        });
 	    });
 	}
-	if(window.innerWidth < 768) {
+	if(window.innerWidth < 1026) {
 	    mobileOnlySlider();
 	}
 	$(window).resize(function(e){
-	    if(window.innerWidth < 768) {
+	    if(window.innerWidth < 1026) {
 	        if(!$('.slider').hasClass('slick-initialized')){
 	            mobileOnlySlider();
 	        }
@@ -160,7 +160,7 @@ $(document).ready(function(){
 	    }
 	});
 	$(window).on('load resize', function() {
-	  if ($(window).width() < 768) {
+	  if ($(window).width() < 1026) {
 	    $('.why-we__carousel__item:not(.slick-initialized)').slick({
 	      centerMode: true,
 	      dots: true,

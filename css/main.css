@@ -346,11 +346,25 @@ div#modalTakeAuditsExample span { width: 100%; display: block; text-align: cente
 
 .main-arrow { cursor: pointer; }
 
+#why-we { padding-bottom: 60px; }
+
 .why-we__wrapp { position: relative; }
 
-.why-we__carousel { position: relative; background-image: url("../img/bg-why-me.png"); background-repeat: no-repeat; background-position: center; background-size: contain; min-height: 370px; }
+.why-we__carousel { position: relative; background-image: url("../img/bg-why-me.png"); background-repeat: no-repeat; background-position: center; background-size: contain; }
 
 .why-we__carousel__item img { display: none; }
+
+.why-we-blocks { max-width: 1000px; margin: auto; height: 350px; }
+
+.why-we-block { text-align: center; font-size: 18px; font-family: 'Open Sans Semi Bold', sans-serif; color: #fff; position: relative; width: 228px; }
+
+.why-we-block:nth-child(1) { left: 122px; top: 95px; }
+
+.why-we-block:nth-child(2) { right: 110px; top: 35px; float: right; }
+
+.why-we-block:nth-child(3) { left: 117px; top: 150px; }
+
+.why-we-block:nth-child(4) { right: 115px; top: 80px; float: right; }
 
 .review-title { color: #3e81c3; font-family: 'Open Sans Semi Bold', sans-serif; text-transform: uppercase; font-size: 20pt; }
 
@@ -878,17 +892,21 @@ span.copyright { font-size: 10pt; color: #fff; margin: 15px 0 0; display: inline
   .bg-header { padding-top: 100px; }
   .header-calc-button-block { margin: 40px auto; } }
 
+@media (max-width: 1026px) { #why-we .container { padding: 0; }
+  #why-we .section-title, #why-we .section-sub-title { padding-left: 20px; padding-right: 20px; text-align: center; }
+  .why-we__carousel { background-image: none; background-repeat: no-repeat; background-position: center; background-size: contain; height: auto; }
+  .why-we__carousel__item { text-align: center; margin: 0 15px 0 0; max-width: 126px; }
+  .why-we__carousel__item img { display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px; }
+  .why-we__carousel__item p { color: #3e81c3; font-size: 12px; font-weight: bold; }
+  .why-we-block:nth-child(1) { left: 0; top: 0; float: none; }
+  .why-we-block:nth-child(2) { right: 0; top: 0; float: none; }
+  .why-we-block:nth-child(3) { left: 0; top: 0; float: none; } }
+
 @media (max-width: 768px) { .aside { display: none; }
   .page-nav__box-wrapp { -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .page-nav__box { width: 100%; }
   .mob-phone_icon { display: block; width: 20px; height: 30px; }
-  .mob-phone_icon svg { display: block; width: 20px; height: 30px; }
-  #why-we .container { padding: 0; }
-  #why-we .section-title, #why-we .section-sub-title { padding-left: 20px; padding-right: 20px; text-align: center; }
-  .why-we__carousel { background-image: none; background-repeat: no-repeat; background-position: center; background-size: contain; min-height: 100%; }
-  .why-we__carousel__item { width: 126px; text-align: center; }
-  .why-we__carousel__item img { display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px; }
-  .why-we__carousel__item p { width: 40%; margin-left: auto; margin-right: auto; color: #3e81c3; font-size: 12px; font-weight: bold; } }
+  .mob-phone_icon svg { display: block; width: 20px; height: 30px; } }
 
 @media (max-width: 480px) { .header-calc-button-block { width: 100%; text-align: center; } }
 
