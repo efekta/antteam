@@ -148,7 +148,20 @@
     top: 95px
     
 .page-nav
+    height: 475px
+    overflow-y: scroll
     padding: 45px 15px
+.page-nav::-webkit-scrollbar-track
+    border-radius: 5px
+    background-color: transparent
+
+.page-nav::-webkit-scrollbar
+    width: 10px
+    background-color: #fff
+
+.page-nav::-webkit-scrollbar-thumb
+    border-radius: 5px
+    background-color: #8ed0ef
 
 .page-nav__box-wrapp
     display: flex
@@ -232,10 +245,28 @@
     content: ''
     position: absolute
 
+.page-nav__box.page-nav__box_inner_list ul li
+    position: relative
+    padding-bottom: 15px
+.page-nav__box.page-nav__box_inner_list ul li::after
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 15px
+    width: 42px
+    height: 1px
+    background: #888888
+.page-nav__box.page-nav__box_inner_list ul li:last-child::after
+    display: none
+.page-nav__box.page-nav__box_inner_list ul li ul li
+    padding-bottom: 0
+.page-nav__box.page-nav__box_inner_list ul li ul li::after
+    display: none
 .bread-crumbs
     padding: 30px 0 0 0
     margin-bottom: 30px
-  
+.page-nav__box-wrapp .page-nav__box:nth-child(2)
+    margin-top: 42px
 .breadcrumb
 	background: transparent
 .breadcrumb-item
