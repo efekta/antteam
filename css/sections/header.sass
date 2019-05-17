@@ -5,11 +5,11 @@
     transition: .5s
 .header_fixed
     transition: .5s
-    position: fixed
-    top: 0
-    left: 0
-    right: 0
-    width: 100%
+    // position: fixed
+    // top: 0
+    // left: 0
+    // right: 0
+    // width: 100%
     max-width: 1500px
     margin: auto
     z-index: 99
@@ -141,10 +141,12 @@
     left: 0
     right: 0
     transition: all .3s ease
-    opacity: 0
+    // opacity: 0
+    display: none
+
 .header.main-head.header_fixed .page-nav-mob
     top: 95px
-
+    
 .page-nav
     padding: 45px 15px
 
@@ -221,8 +223,8 @@
 .page-nav__box_inner_list ul li > ul li a
     color: #000
 .page-nav-mob_show
-    opacity: 1
-
+    // opacity: 1
+    display: block
 .page-nav__box_inner_list ul:first-child
     position: relative
 

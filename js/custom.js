@@ -119,6 +119,59 @@ $(document).ready(function(){
 	  ]
 	});
 
+	function mobileOnlySlider() {
+	    $(document).ready(function(){
+	        $('.why-we__carousel').slick({
+	        	centerMode: true,
+  				centerPadding: '60px',
+  				slidesToShow: 3,
+	            slidesToScroll: 1,
+	            autoplay: false,
+	            arrows: false,
+	            touchMove:true,
+	            variableWidth: true,
+	            dots: false,
+	                pauseOnHover: false,
+	                responsive: [{
+	                    breakpoint: 768,
+	                    settings: {
+	                    	centerMode: true,
+        					centerPadding: '40px',
+        					slidesToShow: 1,
+	                        settings:"unslick"
+	                }
+	            }]
+	        });
+	    });
+	}
+	if(window.innerWidth < 768) {
+	    mobileOnlySlider();
+	}
+	$(window).resize(function(e){
+	    if(window.innerWidth < 768) {
+	        if(!$('.slider').hasClass('slick-initialized')){
+	            mobileOnlySlider();
+	        }
+
+	    }else{
+	        if($('.slider').hasClass('slick-initialized')){
+	            $('.slider').slick('unslick');
+	        }
+	    }
+	});
+	$(window).on('load resize', function() {
+	  if ($(window).width() < 768) {
+	    $('.why-we__carousel__item:not(.slick-initialized)').slick({
+	      centerMode: true,
+	      dots: true,
+	      infinite: true,
+	      speed: 100,
+	      slidesToShow: 1
+	    });
+	  } else {
+	    $(".why-we__carousel__item.slick-initialized").slick("unslick");
+	  }
+	});
 	/*========================
 	select
 	 =======================*/ 
