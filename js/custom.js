@@ -194,7 +194,35 @@ $(document).ready(function(){
 	end select
 	=======================*/ 
 
-
+	$('.slides').slick({
+	  dots: false,
+	  arrows: true,
+	  nextArrow: '<img class="arrow arrow__next" src="img/right.png">',
+	  prevArrow: '<img class="arrow arrow__prev" src="img/left.png">',
+	  adaptiveHeight: true,
+	  slidesToShow: 2,
+	  slidesToScroll: 1,
+	  responsive: [
+	    {
+	      breakpoint: 1024,
+	      settings: {
+	        slidesToShow: 2
+	      }
+	    },
+	    {
+	      breakpoint: 600,
+	      settings: {
+	        slidesToShow: 1
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 1
+	      }
+	    }
+	  ]
+	});
   // $('#menu2').slicknav({
 
   // });
