@@ -186,9 +186,9 @@ div#modalTakeAuditsExample span { width: 100%; display: block; text-align: cente
 
 .policy-konf { width: 300px; margin: auto; text-align: center; }
 
-.header { padding: 11px 0 8px 0; background-color: #8ed0ef; color: #000; -webkit-transition: .5s; -o-transition: .5s; transition: .5s; }
+.header { position: relative; z-index: 999; padding: 11px 0 8px 0; background-color: #8ed0ef; color: #000; -webkit-transition: .5s; -o-transition: .5s; transition: .5s; }
 
-.header_fixed { -webkit-transition: .5s; -o-transition: .5s; transition: .5s; max-width: 1500px; margin: auto; z-index: 99; }
+.header_fixed { -webkit-transition: .5s; -o-transition: .5s; transition: .5s; position: fixed; top: 0; left: 0; right: 0; width: 100%; max-width: 1500px; margin: auto; z-index: 999; }
 
 .header_fixed.main-head .logo-box { width: 200px; margin: 0 auto; -webkit-transition: .5s; -o-transition: .5s; transition: .5s; }
 
@@ -207,8 +207,6 @@ div#modalTakeAuditsExample span { width: 100%; display: block; text-align: cente
 .header-phone span { font-size: 12px; display: block; font-family: 'Open Sans Regular', sans-serif; line-height: 10px; }
 
 .logo-box { width: 170px; margin: auto; }
-
-.main-head { position: fixed; top: 0; left: 0; right: 0; z-index: 999; }
 
 .main-head .logo-box { width: 450px; margin: 0 auto; }
 
@@ -242,11 +240,11 @@ div#modalTakeAuditsExample span { width: 100%; display: block; text-align: cente
 
 .page-nav { height: 475px; overflow-y: scroll; padding: 45px 15px; }
 
-.page-nav::-webkit-scrollbar-track { border-radius: 5px; background-color: transparent; }
+.page-nav::-webkit-scrollbar-track { border-radius: 0; background-color: transparent; }
 
-.page-nav::-webkit-scrollbar { width: 10px; background-color: #fff; }
+.page-nav::-webkit-scrollbar { width: 0; background-color: transparent; }
 
-.page-nav::-webkit-scrollbar-thumb { border-radius: 5px; background-color: #8ed0ef; }
+.page-nav::-webkit-scrollbar-thumb { border-radius: 0; background-color: transparent; }
 
 .page-nav__box-wrapp { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; max-width: 1500px; margin: auto; padding: 0 15px; }
 
@@ -344,7 +342,7 @@ div#modalTakeAuditsExample span { width: 100%; display: block; text-align: cente
 
 .mob-phone_icon { display: none; }
 
-.bg-header { min-height: 650px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; padding-top: 340px; }
+.bg-header { min-height: 650px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; padding-top: 60px; }
 
 .header-title-block { margin-bottom: 55px; text-align: center; text-transform: uppercase; font-size: 40px; font-weight: 600; font-family: 'Open Sans Bold', sans-serif; }
 
@@ -929,7 +927,8 @@ span.copyright { font-size: 10pt; color: #fff; margin: 15px 0 0; display: inline
   .mob-phone_icon { display: block; width: 20px; height: 30px; }
   .mob-phone_icon svg { display: block; width: 20px; height: 30px; }
   .footer_i_calc img { display: none; }
-  .page-nav { height: 100%; } }
+  .page-nav { height: 100%; }
+  .mob-hidden { display: none; } }
 
 @media (max-width: 480px) { .header-calc-button-block { width: 100%; text-align: center; } }
 

@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="libs/slick/slick.css">
   <link rel="stylesheet" href="libs/slick/slick-theme.css">
+  <!-- <link rel="stylesheet" href="libs/OwlCarousel/owl.carousel.min.css"> -->
+  <!-- <link rel="stylesheet" href="libs/OwlCarousel/owl.theme.default.min.css"> -->
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -169,11 +171,9 @@
 
     <section id="why-we" class="bg-white">
       <div class="container">
-
         <h2 class="section-title">Почему мы?</h2>
         <p class="section-sub-title">Мы знаем, что делаем, поэтому каждый проект выходит в топ.
         </p>
-
       </div>
           <div class="why-we__wrapp">
             <div class="why-we__carousel why-we-blocks">
@@ -194,16 +194,14 @@
                 <p>План работ</p>
               </div>
             </div>
-
           </div>
-
     </section>
 
     <section id="reviews" class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="section-title">отзывы</div>
+                    <h2 class="section-title">отзывы</h2>
                 </div>
             </div>
             <div class="row">
@@ -212,15 +210,15 @@
                         <ul class="slides">
                             <li>
                                 <div class="review-container">
-                                    <div class="row mb-3">
+                                    <div class="row mb-3 mob-hidden">
                                         <div class="col-md-12">
                                             <div class="review-title">avrora-medi.ru</div>
-                                            <div class="hidden review-more"><a href="">Cмотреть проект >></a></div>
+                                            <div class="hidden review-more"><a href="">Cмотреть проект></a></div>
                                         </div>
                                     </div>
                                     <div class="row mb-2">
                                         <div class="col-md-8">
-                                            <div class="review-description">В рамках работ над проектом увеличили
+                                            <div class="review-description mob-hidden">В рамках работ над проектом увеличили
                                                 количество звонков почти в 1.8 раз за 4 месяца.
                                             </div>
                                         </div>
@@ -230,7 +228,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-8">
+                                        <div class="col-md-8 mob-hidden">
                                             <div class="review-description-img">
                                                 <div id="chart_div" style="max-width:780px;width: 100%; height: 300px;"></div>
                                             </div>
@@ -238,7 +236,7 @@
                                         <div class="col-md-4">
                                             <div class="review-manager-foto-social">
                                                 <div class="review-manager-foto">
-                                                    <img src="img/foto70x70.png">
+                                                    <img src="img/foto70x70.png" alt="pic">
                                                 </div>
                                                 <div class="review-manager-socials">
                                                     <a href="/">
@@ -283,7 +281,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-8">
+                                        <div class="col-md-8 mob-hidden">
                                             <div class="review-description-img">
                                                 <div id="chart_div_sec" style="max-width:780px;width: 100%; height: 300px;"></div>
                                             </div>
@@ -292,7 +290,7 @@
 
                                             <div class="review-manager-foto-social">
                                                 <div class="review-manager-foto">
-                                                    <img src="img/foto70x70.png">
+                                                    <img src="img/foto70x70.png" alt="pic">
                                                 </div>
                                                 <div class="review-manager-socials">
                                                     <a href="/">
@@ -336,7 +334,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-8">
+                                        <div class="col-md-8 mob-hidden">
                                             <div class="review-description-img">
                                                 <div id="chart_div_third" style="max-width:780px;width: 100%; height: 300px;"></div>
                                             </div>
@@ -345,7 +343,7 @@
 
                                             <div class="review-manager-foto-social">
                                                 <div class="review-manager-foto">
-                                                    <img src="img/foto70x70.png">
+                                                    <img src="img/foto70x70.png" alt="pic">
                                                 </div>
                                                 <div class="review-manager-socials">
                                                     <a href="/">
@@ -379,7 +377,7 @@
     </section>
 
 
-<!--     <section id="get-leads" class="bg-yellow bg-leads">
+    <section id="get-leads" class="bg-yellow bg-leads">
       <div class="container">
           <div class="row">
               <div class="col-md-12">
@@ -872,7 +870,8 @@
               </div>
           </div>
       </div>
-    </section>      -->
+    </section>     
+
   </div>
 
 
@@ -1070,6 +1069,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="libs/fontawesome-pro/fontawesome-all.js"></script>
 <script src="libs/slick/slick.min.js"></script>
+<!-- <script src="libs/OwlCarousel/owl.carousel.js"></script> -->
 <script src="libs/maskedinput/maskedinput.js"></script>
 <script src="libs/jQueryFormStyler/jquery.formstyler.min.js"></script>
 <script src="js/custom.js"></script>

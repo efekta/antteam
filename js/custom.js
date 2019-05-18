@@ -119,32 +119,33 @@ $(document).ready(function(){
 	  ]
 	});
 
+
 	function mobileOnlySlider() {
 	    $(document).ready(function(){
 	        $('.why-we__carousel').slick({
-	        	// centerMode: true,
-  				// centerPadding: '0',
-  				// centerPadding: '0',
-  				slidesToShow: 3,
-	            slidesToScroll: 1,
-	            autoplay: false,
-	            arrows: false,
-	            touchMove:true,
-	            // variableWidth: true,
-	            dots: false,
-	                pauseOnHover: false,
-	                responsive: [{
-	                    breakpoint: 768,
-	                    settings: {
-	                    	arrows: false,
-	                    	dots: false,
-	                    	variableWidth: true,
-	                    	centerMode: true,
-        					centerPadding: '0',
-        					slidesToShow: 1,
-	                        settings:"unslick"
-	                }
-	            }]
+				  // centerMode: true,
+				  // centerPadding: '20px',
+				  slidesToShow: 4,
+				  responsive: [
+				    {
+				      breakpoint: 768,
+				      settings: {
+				        arrows: false,
+				        // centerMode: true,
+				        // centerPadding: '40px',
+				        slidesToShow: 1
+				      }
+				    },
+				    {
+				      breakpoint: 480,
+				      settings: {
+				        arrows: false,
+				        // centerMode: true,
+				        // centerPadding: '40px',
+				        slidesToShow: 1.5
+				      }
+				    }
+				  ]
 	        });
 	    });
 	}
@@ -170,13 +171,13 @@ $(document).ready(function(){
 	      arrows: false,
 	      infinite: true,
 	      speed: 100,
-	      variableWidth: true,
 	      slidesToShow: 1
 	    });
 	  } else {
 	    $(".why-we__carousel__item.slick-initialized").slick("unslick");
 	  }
 	});
+
 	/*========================
 	select
 	 =======================*/ 
@@ -195,37 +196,36 @@ $(document).ready(function(){
 	=======================*/ 
 
 	$('.slides').slick({
-	  dots: false,
-	  arrows: true,
-	  nextArrow: '<img class="arrow arrow__next" src="img/right.png">',
-	  prevArrow: '<img class="arrow arrow__prev" src="img/left.png">',
+	  dots: true,
+	  arrows: false,
 	  adaptiveHeight: true,
-	  slidesToShow: 2,
+	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  responsive: [
 	    {
 	      breakpoint: 1024,
 	      settings: {
-	        slidesToShow: 2
+	        slidesToShow: 1,
+	        dots: true
 	      }
 	    },
 	    {
 	      breakpoint: 600,
 	      settings: {
-	        slidesToShow: 1
+	        slidesToShow: 1,
+	        dots: true
 	      }
 	    },
 	    {
 	      breakpoint: 480,
 	      settings: {
-	        slidesToShow: 1
+	        slidesToShow: 1,
+	        dots: true
 	      }
 	    }
 	  ]
 	});
-  // $('#menu2').slicknav({
 
-  // });
 
 
 }); //end document ready function
