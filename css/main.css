@@ -599,13 +599,15 @@ a.tag-cloud__item { font-weight: normal; font-family: sans-serif; }
 
 .blog-page .article-info__btn { position: relative; display: block; padding-top: 8px; margin: 0 auto; margin-bottom: 25px; font-size: 20px; background-color: #f4f44a; color: #000; }
 
-.blog-page .article-info__footer { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; color: #fff; font-size: 12px; }
+.blog-page .article-info__footer { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: nowrap; flex-wrap: nowrap; color: #fff; font-size: 14px; }
 
 .blog-page .article-info__footer-item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-right: 28px; }
 
-.blog-page .article-info__footer i { margin-right: 4px; font-size: 18px; }
+.blog-page .article-info__footer svg { margin-right: 4px; font-size: 18px; }
 
-.blog-page .article-info__footer-author { display: -webkit-box; display: -ms-flexbox; display: flex; margin-left: auto; cursor: pointer; }
+.blog-page .article-info__footer-author { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: auto; cursor: pointer; }
+
+.blog-page .article-info__footer-author svg { margin-right: 10px; }
 
 .blog-page .article-info__footer-author:hover { color: #f4f44a; }
 
@@ -767,7 +769,7 @@ p.article-content__list__title { font-weight: 600; text-transform: uppercase; fo
 
 .article-content-gray p { margin-bottom: 0; font-weight: 600; font-size: 18px; font-style: italic; }
 
-.article-socials { margin-top: -88px; padding: 20px 0; border-top: 1px solid #888888; }
+.article-socials { padding: 20px 0; border-top: 1px solid #888888; }
 
 .article-socials p { margin-bottom: 20px; font-weight: 600; font-size: 14px; text-transform: uppercase; color: #000; }
 
@@ -876,8 +878,8 @@ span.copyright { font-size: 10pt; color: #fff; margin: 15px 0 0; display: inline
   .blog-page .tag-cloud { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
   .blog-page .article-info { margin: 0; }
   .blog-page .article-info__name { font-size: 25px; }
-  .blog-page .article-info__footer-item.date { width: 100%; margin-top: 10px; -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
-  .blog-page .article-info__footer-author { width: 100%; margin-top: 10px; -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }
+  .blog-page .article-info__footer-item.date { width: 100%; -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
+  .blog-page .article-info__footer-author { width: 100%; -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }
   .blog-page .form-subscribe { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
   .blog-page .form-subscribe .form__input { margin-right: 0; margin-bottom: 15px; }
   .blog-page .footer-logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
@@ -942,8 +944,12 @@ span.copyright { font-size: 10pt; color: #fff; margin: 15px 0 0; display: inline
   .review-fio { text-align: center; }
   .review-title { font-size: 20px; }
   .review-more { margin: 0; }
-  .d-flex_mob { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; } }
+  .d-flex_mob { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+  .jq-selectbox__dropdown ul { min-height: 400px !important; } }
 
-@media (max-width: 480px) { .header-calc-button-block { width: 100%; text-align: center; } }
+@media (max-width: 578px) { .mob-mb-30 { margin-bottom: 30px; } }
+
+@media (max-width: 480px) { .header-calc-button-block { width: 100%; text-align: center; }
+  .footer-calc-button-block div img { display: none; } }
 
 /*# sourceMappingURL=main.css.map */

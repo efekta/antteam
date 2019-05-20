@@ -316,9 +316,9 @@ a.tag-cloud__item
 
 .blog-page .article-info__footer 
   display: flex
-  flex-wrap: wrap
+  flex-wrap: nowrap
   color: #fff
-  font-size: 12px
+  font-size: 14px
 
 
 .blog-page .article-info__footer-item 
@@ -327,17 +327,19 @@ a.tag-cloud__item
   margin-right: 28px
 
 
-.blog-page .article-info__footer i 
+.blog-page .article-info__footer svg 
   margin-right: 4px
   font-size: 18px
 
 
 .blog-page .article-info__footer-author 
   display: flex
+  align-items: center
   margin-left: auto
   cursor: pointer
 
-
+.blog-page .article-info__footer-author svg
+    margin-right: 10px
 .blog-page .article-info__footer-author:hover 
   color: #f4f44a
 

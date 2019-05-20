@@ -172,11 +172,11 @@
 		font-size: 25px
 	.blog-page .article-info__footer-item.date 
 		width: 100%
-		margin-top: 10px
+		// margin-top: 10px
 		order: 1
 	.blog-page .article-info__footer-author 
 		width: 100%
-		margin-top: 10px
+		// margin-top: 10px
 		order: 2
 	.blog-page .form-subscribe 
 		flex-direction: column
@@ -391,8 +391,17 @@
 	.d-flex_mob
 	    display: flex
 	    justify-content: space-between
+	.jq-selectbox__dropdown ul
+		min-height: 400px !important
+@media (max-width: 578px)
+    .mob-mb-30
+    	margin-bottom: 30px
+
+
 @media (max-width: 480px)
 
 	.header-calc-button-block
 		width: 100%
 		text-align: center
+	.footer-calc-button-block div img
+		display: none
