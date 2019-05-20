@@ -99,15 +99,15 @@ $(document).ready(function(){
 	  slidesToScroll: 1,
 	  responsive: [
 	    {
-	      breakpoint: 1024,
+	      breakpoint: 1170,
 	      settings: {
-	        slidesToShow: 2
+	        slidesToShow: 3
 	      }
 	    },
 	    {
-	      breakpoint: 600,
+	      breakpoint: 768,
 	      settings: {
-	        slidesToShow: 1
+	        slidesToShow: 2
 	      }
 	    },
 	    {
@@ -119,36 +119,34 @@ $(document).ready(function(){
 	  ]
 	});
 
-
 	function mobileOnlySlider() {
-	    $(document).ready(function(){
-	        $('.why-we__carousel').slick({
-				  // centerMode: true,
-				  // centerPadding: '20px',
-				  slidesToShow: 4,
-				  responsive: [
-				    {
-				      breakpoint: 768,
-				      settings: {
-				        arrows: false,
-				        // centerMode: true,
-				        // centerPadding: '40px',
-				        slidesToShow: 1
-				      }
-				    },
-				    {
-				      breakpoint: 480,
-				      settings: {
-				        arrows: false,
-				        // centerMode: true,
-				        // centerPadding: '40px',
-				        slidesToShow: 1.5
-				      }
-				    }
-				  ]
-	        });
-	    });
+	$('.why-we__carousel').slick({
+	  centerMode: true,
+	  centerPadding: '60px',
+	  slidesToShow: 3,
+	  responsive: [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        arrows: false,
+	        centerMode: true,
+	        centerPadding: '40px',
+	        slidesToShow: 3
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        arrows: false,
+	        centerMode: true,
+	        centerPadding: '40px',
+	        slidesToShow: 1
+	      }
+	    }
+	  ]
+	});
 	}
+
 	if(window.innerWidth < 1026) {
 	    mobileOnlySlider();
 	}
@@ -167,11 +165,7 @@ $(document).ready(function(){
 	$(window).on('load resize', function() {
 	  if ($(window).width() < 1026) {
 	    $('.why-we__carousel__item:not(.slick-initialized)').slick({
-	      dots: false,
-	      arrows: false,
-	      infinite: true,
-	      speed: 100,
-	      slidesToShow: 1
+
 	    });
 	  } else {
 	    $(".why-we__carousel__item.slick-initialized").slick("unslick");
@@ -197,8 +191,9 @@ $(document).ready(function(){
 
 	$('.slides').slick({
 	  dots: true,
-	  arrows: false,
-	  adaptiveHeight: true,
+	  arrows: true,
+	  prevArrow: '<img class="arrow arrow__next" src="img/right.png">',
+	  nextArrow: '<img class="arrow arrow__prev" src="img/left.png">',
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  responsive: [
@@ -213,20 +208,77 @@ $(document).ready(function(){
 	      breakpoint: 600,
 	      settings: {
 	        slidesToShow: 1,
-	        dots: true
+		  	dots: true,
+		  	arrows: true
 	      }
 	    },
 	    {
 	      breakpoint: 480,
 	      settings: {
 	        slidesToShow: 1,
-	        dots: true
+	        dots: true,
+	        arrows: true
 	      }
 	    }
 	  ]
 	});
 
+	function mobileOnlySlider() {
+	$('.leads-ways').slick({
+	  dots: false,
+	  arrows: false,
+	  centerMode: true,
+	  centerPadding: '60px',
+	  slidesToShow: 3,
+	  responsive: [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        arrows: false,
+	        dots: true,
+	        centerMode: true,
+	        centerPadding: '40px',
+	        slidesToShow: 2
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        arrows: false,
+	        dots: true,
+	        centerMode: true,
+	        centerPadding: '40px',
+	        slidesToShow: 1
+	      }
+	    }
+	  ]
+	});
+	}
 
+	if(window.innerWidth < 1024) {
+	    mobileOnlySlider();
+	}
+	$(window).resize(function(e){
+	    if(window.innerWidth < 1024) {
+	        if(!$('.slider').hasClass('slick-initialized')){
+	            mobileOnlySlider();
+	        }
+
+	    }else{
+	        if($('.slider').hasClass('slick-initialized')){
+	            $('.slider').slick('unslick');
+	        }
+	    }
+	});
+	$(window).on('load resize', function() {
+	  if ($(window).width() < 1024) {
+	    $('.leads-way:not(.slick-initialized)').slick({
+
+	    });
+	  } else {
+	    $(".leads-way.slick-initialized").slick("unslick");
+	  }
+	});
 
 }); //end document ready function
 

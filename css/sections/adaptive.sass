@@ -22,7 +22,7 @@
 
 	.why-we-blocks 
     	// max-width: 950px
-    	max-width: 100%
+    	// max-width: 100%
 
 @media (max-width: 1170px)
 	.container 
@@ -32,7 +32,11 @@
 		right: -10px
 	.arrow__next
 		left: -10px
+	.article-page-main
+	    width: calc(100% - 360px)
+	    margin-right: 0
 
+	
 
 @media (max-width: 1024px)
 	.header-phone
@@ -255,11 +259,11 @@
 	    margin-bottom: 10px
 
 	.aside
-	    width: 100%
-	    position: static
+	    // width: 100%
+	    // position: static
 	    margin-bottom: 30px
 	.article-page-main
-	    width: 100%
+	    // width: 100%
 	.article-content__title
 		font-size: 20px
 	p.article-content__list__title
@@ -280,13 +284,17 @@
 	    top: 72px
 	.header.main-head .page-nav-mob, .blog-page .header.main-head .page-nav-mob
 		top: 72px		
-
 	.bg-header
 		padding-top: 100px
 	.header-calc-button-block
 		margin: 40px auto
 	.page-nav__box-wrapp .page-nav__box:nth-child(2)
-       margin-top: 0
+	   margin-top: 0
+	.bg-leads
+		background-image: none
+	.leads-ways
+		padding-bottom: 30px
+
 @media (max-width: 1026px)
 	// ПОЧЕМУ МЫ?
 	#why-we .container
@@ -305,8 +313,8 @@
 	    height: auto		
 	.why-we__carousel__item
 		text-align: center
-		// margin: 0 15px 0 0
-		max-width: 126px
+		// margin: 0 15px 0 15px
+		// max-width: 126px
 
 	.why-we__carousel__item img
 		display: block
@@ -343,8 +351,13 @@
 		right: 0
 		top: 0
 		float: none
-
-
+@media (max-width: 960px)
+	.aside
+	    width: 100%
+	    position: static
+	    margin-bottom: 30px
+	.article-page-main
+	    width: 100%
 @media (max-width: 768px)
 	.aside
 		display: none
@@ -369,6 +382,15 @@
 
 	.mob-hidden
 		display: none
+	.review-fio
+		text-align: center
+	.review-title
+		font-size: 20px
+	.review-more
+		margin: 0
+	.d-flex_mob
+	    display: flex
+	    justify-content: space-between
 @media (max-width: 480px)
 
 	.header-calc-button-block
