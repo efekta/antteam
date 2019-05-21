@@ -119,7 +119,7 @@ $(document).ready(function(){
 	  ]
 	});
 
-	function mobileOnlySlider() {
+	function mobileOnlySlider_why() {
 	$('.why-we__carousel').slick({
 	  centerMode: true,
 	  centerPadding: '60px',
@@ -147,9 +147,6 @@ $(document).ready(function(){
 	});
 	}
 
-	if(window.innerWidth < 1026) {
-	    mobileOnlySlider();
-	}
 	$(window).resize(function(e){
 	    if(window.innerWidth < 1026) {
 	        if(!$('.slider').hasClass('slick-initialized')){
@@ -234,8 +231,8 @@ $(document).ready(function(){
 	    {
 	      breakpoint: 768,
 	      settings: {
-	        arrows: false,
-	        dots: true,
+		  dots: false,
+		  arrows: false,
 	        centerMode: true,
 	        centerPadding: '40px',
 	        slidesToShow: 2
@@ -244,8 +241,8 @@ $(document).ready(function(){
 	    {
 	      breakpoint: 480,
 	      settings: {
-	        arrows: false,
-	        dots: true,
+			dots: false,
+			arrows: false,
 	        centerMode: true,
 	        centerPadding: '40px',
 	        slidesToShow: 1
@@ -255,11 +252,9 @@ $(document).ready(function(){
 	});
 	}
 
-	if(window.innerWidth < 1024) {
-	    mobileOnlySlider();
-	}
+
 	$(window).resize(function(e){
-	    if(window.innerWidth < 1024) {
+	    if(window.innerWidth < 1026) {
 	        if(!$('.slider').hasClass('slick-initialized')){
 	            mobileOnlySlider();
 	        }
@@ -271,7 +266,7 @@ $(document).ready(function(){
 	    }
 	});
 	$(window).on('load resize', function() {
-	  if ($(window).width() < 1024) {
+	  if ($(window).width() < 1026) {
 	    $('.leads-way:not(.slick-initialized)').slick({
 
 	    });
@@ -282,23 +277,45 @@ $(document).ready(function(){
 
 	//DatePicker
 
-$('#example-show-hide-callbacks').data('datepicker')
-$('#example-show-hide-callbacks').datepicker({
-    onShow: function(dp, animationCompleted){
-        if (!animationCompleted) {
-            log('start showing')
-        } else {
-            log('finished showing')
-        }
-    },
-    onHide: function(dp, animationCompleted){
-        if (!animationCompleted) {
-            log('start hiding')
-        } else {
-            log('finished hiding')
-        }
-    }
-})
+	$('#example-show-hide-callbacks').data('datepicker')
+	$('#example-show-hide-callbacks').datepicker({
+	    onShow: function(dp, animationCompleted){
+	        if (!animationCompleted) {
+	            log('start showing')
+	        } else {
+	            log('finished showing')
+	        }
+	    },
+	    onHide: function(dp, animationCompleted){
+	        if (!animationCompleted) {
+	            log('start hiding')
+	        } else {
+	            log('finished hiding')
+	        }
+	    }
+	})
+
+	$(".search-filter").on("click", function() {
+		$(".search").toggleClass('search_show');
+	});
+
+	$('.search-filter').click(function(){
+	  if (!$('.search-filter span').data('status')) {
+	  	$('.search-filter span').html('Скрыть фильтры');
+	    $('.search-filter span').data('status', true);
+	  }
+	  else {
+	  	$('.search-filter span').html('Показать фильтры');
+	    $('.search-filter span').data('status', false);
+	  }
+	});
+
+	if(window.innerWidth < 1026) {
+	    mobileOnlySlider_why();
+	}
+	if(window.innerWidth < 1026) {
+	    mobileOnlySlider();
+	}
 }); //end document ready function
 
 

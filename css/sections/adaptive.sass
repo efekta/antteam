@@ -403,16 +403,14 @@
 	.blog-page .subscribe
 		background: #f4f44a
 		margin-bottom: 55px
+
+
 	// Blog
 
 	.article-info
 		display: none
 		opacity: 0
-	.blog-page .article-item.article-item_small img, 
-	.blog-page .article-item.article-item_big img,
-	.blog-page .article-item.article-item_full-size img
-		// height: 240px
-		// position: relative
+
 	.blog-page .article-info__name
 		color: #3e81c3
 		font-size: 18px
@@ -423,27 +421,27 @@
 		background-color: transparent
 		padding: 20px 0
 		opacity: 1
-	.blog-page .article-info__name
-		// position: absolute
-		// top: -40px
+
 	.blog-page .article-info__descr
 		color: #000
 	.blog-page .article-info__footer
 		color: #9f9f9f
-	.blog-page .article-info__btn
-		// position: absolute
-		// top: 50%
-		// left: 50%
-		// transform: translate(-50%, -50%)
+
 	.article-item__pic-wrap
 		position: relative
-	.blog-page .article-info__footer-author
-	    position: absolute
-	    bottom: 0px
-	    // display: flex
-	    // justify-content: flex-end
 
+	.blog-page .article-info__footer-item.date
+		width: auto
+	.blog-page .search
+		margin-bottom: 20px
 @media (max-width: 578px)
+	.search-filter
+		display: inline-block
+		margin: 0 0 40px 0
+		font-size: 12px
+		color: #3e81c3 !important
+		border-bottom: 1px dashed #3e81c3
+
 	.mob-mb-30
 		margin-bottom: 30px
 	.vers-mob
@@ -453,6 +451,14 @@
 	.blog-page .form__btn-ok:before, .blog-page .form__btn-reset:before
 		margin-right: 5px
 		vertical-align: middle
+	.cloud
+		display: none
+	.search
+		display: none
+
+
+	.search_show
+		display: block
 @media (max-width: 480px)
 
 	.header-calc-button-block
