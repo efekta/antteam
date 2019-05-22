@@ -20,9 +20,6 @@
 	.main-head
 		max-width: 100%
 
-	.why-we-blocks 
-    	// max-width: 950px
-    	// max-width: 100%
 
 @media (max-width: 1170px)
 	.container 
@@ -266,11 +263,7 @@
 	    margin-bottom: 10px
 
 	.aside
-	    // width: 100%
-	    // position: static
 	    margin-bottom: 30px
-	.article-page-main
-	    // width: 100%
 	.article-content__title
 		font-size: 20px
 	p.article-content__list__title
@@ -286,7 +279,6 @@
 		font-size: 14px
 	.article-content-gray p
 		font-size: 14px
-
 	.header.main-head.header_fixed .page-nav-mob
 	    top: 72px
 	.header.main-head .page-nav-mob, .blog-page .header.main-head .page-nav-mob
@@ -306,12 +298,10 @@
 	// ПОЧЕМУ МЫ?
 	#why-we .container
 		padding: 0
-
 	#why-we .section-title, #why-we .section-sub-title
 		padding-left: 20px
 		padding-right: 20px
 		text-align: center
-
 	.why-we__carousel
 	    background-image: none
 	    background-repeat: no-repeat
@@ -320,44 +310,77 @@
 	    height: auto		
 	.why-we__carousel__item
 		text-align: center
-		// margin: 0 15px 0 15px
-		// max-width: 126px
-
 	.why-we__carousel__item img
 		display: block
 		margin-left: auto
 		margin-right: auto
 		margin-bottom: 15px
-
-
 	.why-we__carousel__item p
 		color: #3e81c3
 		font-size: 12px
 		font-weight: bold
-
-
-
 	.why-we-block:nth-child(1)
 		left: 0
 		top: 0
 		float: none
-
-
 	.why-we-block:nth-child(2)
 		right: 0
 		top: 0
 		float: none
-
 	.why-we-block:nth-child(3)
 		left: 0
 		top: 0
 		float: none
-
-
 	.why-we-block:nth-child(4)
 		right: 0
 		top: 0
 		float: none
+	.more-results_bg
+		background-image: none
+	.more-results-slider
+		max-width: 100%
+		flex-wrap: wrap
+		background-image: none
+	.more-results__item
+		position: static
+		width: 100%
+		padding: 15px
+	.more-results__item-content,
+		justify-content: center
+		text-align: left
+	.more-results__item_1
+	  text-align: center
+	.more-results__item_2
+	  text-align: center
+	.more-results__item_3
+	  text-align: center
+	.more-results__item_4
+	  text-align: center
+	.more-results__item_1 .more-results__item-content,
+	.more-results__item_2 .more-results__item-content
+		flex-direction: row-reverse
+	.more-results__mob-pic
+		position: relative
+		display: block
+		width: 78px
+		height: 78px
+		margin: auto
+		margin-bottom: 25px
+	.more-results__mob-pic::after
+		content: ''
+		position: absolute
+		left: 50%
+		bottom: -23px
+		width: 2px
+		height: 20px
+		background: #000
+	.more-results__mob-pic svg
+		display: block
+		width: 78px
+		height: 78px
+	.more-results__item-ico
+		margin-left: 0
+		margin-right: 10px
 @media (max-width: 960px)
 	.aside
 	    width: 100%
@@ -466,3 +489,5 @@
 		text-align: center
 	.footer-calc-button-block div img
 		display: none
+	.more-results__item
+

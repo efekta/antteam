@@ -101,16 +101,15 @@ $(document).ready(function(){
 	// slider init mob function
 	function mobileOnlySlider_why() {
 	$('.why-we__carousel').slick({
-	  centerMode: true,
-	  centerPadding: '60px',
+	  arrows: false,
+	  dots: false,
 	  slidesToShow: 3,
 	  responsive: [
 	    {
 	      breakpoint: 768,
 	      settings: {
 	        arrows: false,
-	        centerMode: true,
-	        centerPadding: '40px',
+	        dots: false,
 	        slidesToShow: 3
 	      }
 	    },
@@ -118,8 +117,7 @@ $(document).ready(function(){
 	      breakpoint: 480,
 	      settings: {
 	        arrows: false,
-	        centerMode: true,
-	        centerPadding: '40px',
+	        dots: false,
 	        slidesToShow: 1
 	      }
 	    }
@@ -130,7 +128,7 @@ $(document).ready(function(){
 	$(window).resize(function(e){
 	    if(window.innerWidth < 1026) {
 	        if(!$('.slider').hasClass('slick-initialized')){
-	            mobileOnlySlider();
+	            mobileOnlySlider_why();
 	        }
 
 	    }else{
@@ -202,9 +200,9 @@ $(document).ready(function(){
 	});
 
 	// slider init mob function
-	function mobileOnlySlider() {
+
+	function mobileOnlySlider_leads() {
 	$('.leads-ways').slick({
-	  dots: false,
 	  arrows: false,
 	  centerMode: true,
 	  centerPadding: '60px',
@@ -213,18 +211,16 @@ $(document).ready(function(){
 	    {
 	      breakpoint: 768,
 	      settings: {
-		  dots: false,
-		  arrows: false,
+	        arrows: false,
 	        centerMode: true,
 	        centerPadding: '40px',
-	        slidesToShow: 2
+	        slidesToShow: 3
 	      }
 	    },
 	    {
 	      breakpoint: 480,
 	      settings: {
-			dots: false,
-			arrows: false,
+	        arrows: false,
 	        centerMode: true,
 	        centerPadding: '40px',
 	        slidesToShow: 1
@@ -237,7 +233,7 @@ $(document).ready(function(){
 	$(window).resize(function(e){
 	    if(window.innerWidth < 1026) {
 	        if(!$('.slider').hasClass('slick-initialized')){
-	            mobileOnlySlider();
+	            mobileOnlySlider_leads();
 	        }
 
 	    }else{
@@ -291,40 +287,65 @@ $(document).ready(function(){
 	  }
 	});
 
+
+	// slider init mob function
+	function mobileOnlySlider_more() {
+	$('.more-results-slider').slick({
+	  arrows: false,
+	  dots: false,
+	  slidesToShow: 3,
+	  responsive: [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        arrows: false,
+	        dots: false,
+	        slidesToShow: 2
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        arrows: false,
+	        dots: false,
+	        slidesToShow: 1
+	      }
+	    }
+	  ]
+	});
+	}
+
+	$(window).resize(function(e){
+	    if(window.innerWidth < 1026) {
+	        if(!$('.slider').hasClass('slick-initialized')){
+	            mobileOnlySlider_more();
+	        }
+
+	    }else{
+	        if($('.slider').hasClass('slick-initialized')){
+	            $('.slider').slick('unslick');
+	        }
+	    }
+	});
+	$(window).on('load resize', function() {
+	  if ($(window).width() < 1026) {
+	    $('.more-results__item:not(.slick-initialized)').slick({
+
+	    });
+	  } else {
+	    $(".more-results__item.slick-initialized").slick("unslick");
+	  }
+	});
 	if(window.innerWidth < 1026) {
 	    mobileOnlySlider_why();
 	}
 	if(window.innerWidth < 1026) {
-	    mobileOnlySlider();
+	    mobileOnlySlider_more();
+	}
+	if(window.innerWidth < 1026) {
+	    mobileOnlySlider_leads();
 	}
 
-
-	// accordion
-	// $('.set > span').on('click', function() {
-	//     if ($(this).hasClass("active")) {
-	//       $(this).removeClass("active");
-	//       $(this)
-	//         .siblings(".content")
-	//         .slideUp(200);
-	//       $(".set > span i")
-	//         .removeClass("fa-minus")
-	//         .addClass("fa-plus");
-	//     } else {
-	//       $(".set > span i")
-	//         .removeClass("fa-minus")
-	//         .addClass("fa-plus");
-	//       $(this)
-	//         .find("i")
-	//         .removeClass("fa-plus")
-	//         .addClass("fa-minus");
-	//       $('.set > span').removeClass('active');
-	//       $(this).addClass("active");
-	//       $('.content').slideUp(200);
-	//       $(this)
-	//         .siblings('.content')
-	//         .slideDown(200);
-	//     }
-	//   });
 }); //end document ready function
 
 

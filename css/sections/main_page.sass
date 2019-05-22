@@ -351,7 +351,7 @@ ol.flex-control-nav.flex-control-paging
   border-radius: 50%
   background-color: rgb(244, 244, 74)
   margin: auto
-.how-we-works__item-pic svg
+.how-we-works__item-pic img
   width: 54px
   height: 50px
 
@@ -459,45 +459,80 @@ ol.flex-control-nav.flex-control-paging
 
 
 // ЭФФЕКТИВНОСТЬ ВО ВСЕМ
-.more-results-item-block
-    min-height: 170px
-.more-results-item-title
-    width: calc(100% - 55px)
-    color: #3e81c3
-    font-family: 'Open Sans Semi Bold', sans-serif
-    font-size: 18pt
-.more-results-item-sub-title
-    width: calc(100% - 55px)
-    color: #000
-    font-family: 'Open Sans Semi Bold', sans-serif
-    font-size: 15pt
-    line-height: 10px
-.float-r
-    float: right
-
-.more-results-item-img
-    width: 45px
-    height: 45px
-    margin-top: -36px
-.more-results-item-text
-    line-height: 16px
-    font-family: 'Open Sans Regular', sans-serif
-
-.more-results-item-text:before
-    clear: both
-    content: " "
-    width: 100%
-    height: 1px
-    display: block
-    height: 15px
-
-.text-al-r
-    text-align: right
-
-.float-l
-    float: left
+.more-results_bg
+  position: relative
+  background-image: url('../img/bg_effect.png')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: contain
+  padding: 40px 0
 
 
+.more-results-slider
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  max-width: 835px
+  min-height: 350px
+  margin: auto
+  background-image: url('../img/ckpt.png')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: contain
+
+.more-results__item
+  position: absolute
+  width: 235px
+  
+.more-results__item_1
+  top: 0
+  left: 0
+  text-align: right
+.more-results__item_2
+  bottom: 0
+  left: 0
+  text-align: right
+.more-results__item_3
+  top: 0
+  right: 0
+  text-align: left
+  
+.more-results__item_4
+  bottom: 0
+  right: 0
+  text-align: left
+
+
+
+.more-results__item_3 .more-results__item-content,
+.more-results__item_4 .more-results__item-content 
+  flex-direction: row-reverse
+.more-results__item-content
+  display: flex
+  justify-content: space-between
+  justify-content: flex-end
+
+.more-results__mob-pic
+  display: none
+.more-results__item_1 .more-results__item-ico,
+.more-results__item_2 .more-results__item-ico 
+  margin-left: 10px
+.more-results__item_3 .more-results__item-ico,
+.more-results__item_4 .more-results__item-ico 
+  margin-right: 10px
+.more-results__item .more-results__item-desc > span
+  font-size: 18px
+  font-weight: bold
+  color: #3e81c3
+
+.more-results__item .more-results__item-desc > p
+  font-size: 14px
+  font-weight: bold
+  color: #000
+
+.more-results__item p
+  font-size: 12px
 
 
 // ЦЕНЫ НА УСЛУГИ
