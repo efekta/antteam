@@ -306,78 +306,156 @@ ol.flex-control-nav.flex-control-paging
 
 // КАК ПОСТРОЕНА РАБОТА
 .how-we-works-new-project
-    margin: auto
-    width: 230px
+    min-height: 480px
+.how-we-works-new-project__pic
+  position: relative
+  width: 226px
+  height: 121px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin: auto
+  margin-bottom: 50px
+  border-radius: 3px
+  background-color: rgb(62, 129, 195)
+  color: #fff
+  font-size: 20px
+  text-transform: uppercase
 
-.how-we-works-new-project
-    text-align: center
+.how-we-works-new-project__pic img
+  margin-bottom: 10px
 
-.how-we-works-new-project span
-    margin: -45px 0 55px
-    display: block
-    text-transform: uppercase
-    font-size: 23px
-    font-weight: 600
-    color: #fff
-.block-way-1
-    position: absolute
-    background: #000
-    height: 35px
-    width: 3px
-    margin: -40px 0 0px 110px
+.how-we-works-new-project__pic::before
+  content: ''
+  position: absolute
+  left: 50%
+  bottom: -40px
+  background: #000
+  height: 35px
+  width: 3px
 
-.how-we-works-ways
-    display: flex
-    justify-content: space-between
+.how-we-works
+  display: flex
+  flex-wrap: nowrap
+  justify-content: space-between
+.how-we-works__item
+  text-align: center
+.how-we-works__item-pic
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center  
+  width: 78px
+  height: 78px
+  border-radius: 50%
+  background-color: rgb(244, 244, 74)
+  margin: auto
+.how-we-works__item-pic svg
+  width: 54px
+  height: 50px
 
-.how-we-works-way 
-    text-align: -webkit-center
+.how-we-works__item span
+  position: relative 
+  font-size: 12px
+  color: #000
+  border-bottom: 1px solid #000
 
-.how-we-works-way img
-    width: 75px
-    height: 75px
-    display: block
-    background: #ddd
-    padding: 14px
-    border-radius: 90px
+.how-we-works__item span::before
+  content: ''
+  width: 2px
+  height: 20px
+  background: #000
+  position: absolute
+  bottom: -25px
+  left: 50%
 
-.nav-bg-1
-    background: #fff
-    height: 100px
-    width: 100%
-    position: absolute
-.how-we-works-way .db
-    display: none
+.how-we-works__item span::after
+  content: ''
+  width: 241px
+  height: 2px
+  background: #000
+  position: absolute
+  bottom: -25px
+  left: 50%
 
-.block-way-2
-    position: absolute
-    height: 27px
-    background: #000
-    width: 3px
-    margin: 5px 0px 0px 60px
-.block-way-3
-    position: absolute
-    height: 3px
-    background: #000
-    width: 240px
-    margin: 29px 0px 0px 60px
-.block-way-4
-    position: absolute
-    height: 35px
-    background: #000
-    width: 3px
-    margin: 30px 0px 0px 105px
-.block-way-5
-    position: absolute
-    height: 35px
-    background: #000
-    width: 3px
-    margin: 30px 0px 0px 297px
-.how-we-works-sub-ways
-    display: none
-    position: absolute
-    width: 400px
-    margin: 25px -10px
+
+
+
+
+// .how-we-works-new-project
+//     margin: auto
+//     width: 230px
+
+// .how-we-works-new-project
+//     text-align: center
+
+// .how-we-works-new-project span
+//     margin: -45px 0 55px
+//     display: block
+//     text-transform: uppercase
+//     font-size: 23px
+//     font-weight: 600
+//     color: #fff
+// .block-way-1
+//     position: absolute
+//     background: #000
+//     height: 35px
+//     width: 3px
+//     margin: -40px 0 0px 110px
+
+// .how-we-works-ways
+//     display: flex
+//     justify-content: space-between
+
+// .how-we-works-way 
+//     text-align: -webkit-center
+
+// .how-we-works-way img
+//     width: 75px
+//     height: 75px
+//     display: block
+//     background: #ddd
+//     padding: 14px
+//     border-radius: 90px
+
+// .nav-bg-1
+//     background: #fff
+//     height: 100px
+//     width: 100%
+//     position: absolute
+// .how-we-works-way .db
+//     display: none
+
+// .block-way-2
+//     position: absolute
+//     height: 27px
+//     background: #000
+//     width: 3px
+//     margin: 5px 0px 0px 60px
+// .block-way-3
+//     position: absolute
+//     height: 3px
+//     background: #000
+//     width: 240px
+//     margin: 29px 0px 0px 60px
+// .block-way-4
+//     position: absolute
+//     height: 35px
+//     background: #000
+//     width: 3px
+//     margin: 30px 0px 0px 105px
+// .block-way-5
+//     position: absolute
+//     height: 35px
+//     background: #000
+//     width: 3px
+//     margin: 30px 0px 0px 297px
+// .how-we-works-sub-ways
+//     display: none
+//     position: absolute
+//     width: 400px
+//     margin: 25px -10px
 
 
 // ЭФФЕКТИВНОСТЬ ВО ВСЕМ
