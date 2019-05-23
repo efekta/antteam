@@ -307,6 +307,7 @@ ol.flex-control-nav.flex-control-paging
 // КАК ПОСТРОЕНА РАБОТА
 .how-we-works-new-project
     min-height: 480px
+
 .how-we-works-new-project__pic
   position: relative
   width: 226px
@@ -339,8 +340,12 @@ ol.flex-control-nav.flex-control-paging
   display: flex
   flex-wrap: nowrap
   justify-content: space-between
+
 .how-we-works__item
-  text-align: center
+  cursor: pointer
+  // width: 13%  
+  // text-align: center
+
 .how-we-works__item-pic
   display: flex
   flex-direction: column
@@ -351,15 +356,46 @@ ol.flex-control-nav.flex-control-paging
   border-radius: 50%
   background-color: rgb(244, 244, 74)
   margin: auto
+  margin-bottom: 15px
+
 .how-we-works__item-pic img
   width: 54px
   height: 50px
 
 .how-we-works__item span
-  position: relative 
+  position: relative
+  display: block
   font-size: 12px
   color: #000
   border-bottom: 1px solid #000
+  margin-bottom: 50px
+
+.tabs
+  position: relative
+  display: inline-block
+
+.tab
+  position: relative
+  display: inline-block
+  vertical-align: middle
+  border-radius: 3px
+  background-color: rgb(244, 244, 74)
+  padding: 10px 15px
+  text-decoration: underline
+  cursor: pointer
+  margin-bottom: 35px
+
+
+.tab::before
+  content: ''
+  width: 2px
+  height: 20px
+  background: #000
+  position: absolute
+  top: -25px
+  left: 50%
+.tab-active
+  background-color: rgb(229, 229, 229)
 
 .how-we-works__item span::before
   content: ''
@@ -370,15 +406,19 @@ ol.flex-control-nav.flex-control-paging
   bottom: -25px
   left: 50%
 
-.how-we-works__item span::after
+.tabs::before
   content: ''
-  width: 241px
+  // width: calc(100% - 102px)
+  min-width: 288px
   height: 2px
   background: #000
   position: absolute
-  bottom: -25px
-  left: 50%
+  top: -26px
+  left: 54px
 
+.tab_content
+  max-width: 378px
+  font-size: 12px
 
 
 

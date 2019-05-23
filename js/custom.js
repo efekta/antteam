@@ -99,7 +99,7 @@ $(document).ready(function(){
 	});
 
 	// slider init mob function
-	function mobileOnlySlider_why() {
+	function mobileOnlySlider() {
 	$('.why-we__carousel').slick({
 	  arrows: false,
 	  dots: false,
@@ -128,7 +128,7 @@ $(document).ready(function(){
 	$(window).resize(function(e){
 	    if(window.innerWidth < 1026) {
 	        if(!$('.slider').hasClass('slick-initialized')){
-	            mobileOnlySlider_why();
+	            mobileOnlySlider();
 	        }
 
 	    }else{
@@ -203,6 +203,7 @@ $(document).ready(function(){
 
 	function mobileOnlySlider_leads() {
 	$('.leads-ways').slick({
+	  dots: false,
 	  arrows: false,
 	  centerMode: true,
 	  centerPadding: '60px',
@@ -211,7 +212,8 @@ $(document).ready(function(){
 	    {
 	      breakpoint: 768,
 	      settings: {
-	        arrows: false,
+		    dots: false,
+		    arrows: false,
 	        centerMode: true,
 	        centerPadding: '40px',
 	        slidesToShow: 3
@@ -220,7 +222,8 @@ $(document).ready(function(){
 	    {
 	      breakpoint: 480,
 	      settings: {
-	        arrows: false,
+			dots: false,
+			arrows: false,
 	        centerMode: true,
 	        centerPadding: '40px',
 	        slidesToShow: 1
@@ -336,8 +339,20 @@ $(document).ready(function(){
 	    $(".more-results__item.slick-initialized").slick("unslick");
 	  }
 	});
+
+
+	/*=================
+	Tabs
+	==================*/
+	$(".tab_items").not(":first").hide();
+	$(".how-we-works-tabs-wrapp .tab").click(function() {
+		$(".how-we-works-tabs-wrapp .tab").removeClass("tab-active").eq($(this).index()).addClass("tab-active");
+		$(".tab_items").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("tab-active ");
+
+	// init sliders
 	if(window.innerWidth < 1026) {
-	    mobileOnlySlider_why();
+	    mobileOnlySlider();
 	}
 	if(window.innerWidth < 1026) {
 	    mobileOnlySlider_more();
