@@ -350,6 +350,12 @@ $(document).ready(function(){
 		$(".tab_items").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("tab-active ");
 
+
+	/*================================
+	TABS active class
+	=================================*/
+
+
 	// init sliders
 	if(window.innerWidth < 1026) {
 	    mobileOnlySlider();
