@@ -340,7 +340,54 @@ $(document).ready(function(){
 	  }
 	});
 
+	// slider init mob function
+	function mobileOnlySlider_works() {
+	$('.how-we-works').slick({
+	  arrows: false,
+	  dots: false,
+	  slidesToShow: 3,
+	  responsive: [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        arrows: false,
+	        dots: false,
+	        slidesToShow: 3
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        arrows: false,
+	        dots: false,
+	        slidesToShow: 1
+	      }
+	    }
+	  ]
+	});
+	}
 
+	$(window).resize(function(e){
+	    if(window.innerWidth < 1026) {
+	        if(!$('.slider').hasClass('slick-initialized')){
+	            mobileOnlySlider();
+	        }
+
+	    }else{
+	        if($('.slider').hasClass('slick-initialized')){
+	            $('.slider').slick('unslick');
+	        }
+	    }
+	});
+	$(window).on('load resize', function() {
+	  if ($(window).width() < 1026) {
+	    $('.how-we-works__item:not(.slick-initialized)').slick({
+
+	    });
+	  } else {
+	    $(".how-we-works__item.slick-initialized").slick("unslick");
+	  }
+	});
 	/*=================
 	Tabs
 	==================*/
@@ -365,6 +412,9 @@ $(document).ready(function(){
 	}
 	if(window.innerWidth < 1026) {
 	    mobileOnlySlider_leads();
+	}
+	if(window.innerWidth < 1026) {
+	    mobileOnlySlider_works();
 	}
 
 }); //end document ready function

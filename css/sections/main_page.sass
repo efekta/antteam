@@ -338,24 +338,16 @@ ol.flex-control-nav.flex-control-paging
 
 
 
-
-
-
-
-
-
-
-
-
 .how-we-works
   display: flex
   flex-wrap: nowrap
   justify-content: space-between
 
 .how-we-works__item
+  text-align: center
   cursor: pointer
-  // width: 13%  
-  // text-align: center
+  margin: 0 15px 15px 15px;
+
 
 .how-we-works__item-pic
   display: flex
@@ -370,147 +362,88 @@ ol.flex-control-nav.flex-control-paging
   margin: auto
   margin-bottom: 15px
 
-// .how-we-works__item-pic img
-//   width: 54px
-//   height: 50px
 
 .how-we-works__item span
   position: relative
   display: block
   font-size: 12px
   color: #000
-  border-bottom: 1px solid #000
+  // border-bottom: 1px solid #000
+  text-decoration: underline
   margin-bottom: 50px
 
 .tabs
   position: relative
-  display: inline-block
+  display: flex
+  justify-content: space-between
+  overflow-y: hidden
+  overflow-x: scroll
+.tabs::-webkit-scrollbar-track
+    border-radius: 0
+    background-color: transparent
 
+.tabs::-webkit-scrollbar
+    width: 0
+    background-color: transparent
+
+.tabs::-webkit-scrollbar-thumb
+    border-radius: 0
+    background-color: transparent  
 .tab
   position: relative
-  display: inline-block
-  vertical-align: middle
+  min-width: 200px
+  text-align: center
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
   border-radius: 3px
   background-color: rgb(229, 229, 229)
   padding: 10px 15px
   text-decoration: underline
   cursor: pointer
+  margin-right: 10px
+  margin-left: 10px
   margin-bottom: 35px
 
+// .tab::before
+//   content: ''
+//   width: 2px
+//   height: 20px
+//   background: #000
+//   position: absolute
+//   top: -25px
+//   left: 50%
 
-.tab::before
-  content: ''
-  width: 2px
-  height: 20px
-  background: #000
-  position: absolute
-  top: -25px
-  left: 50%
 .tab-active
   background-color: rgb(244, 244, 74)
 
+// .how-we-works__item span::before
+//   content: ''
+//   width: 2px
+//   height: 20px
+//   background: #000
+//   position: absolute
+//   bottom: -25px
+//   left: 50%
 
-.how-we-works__item span::before
-  content: ''
-  width: 2px
-  height: 20px
-  background: #000
-  position: absolute
-  bottom: -25px
-  left: 50%
-
-.tabs::before
-  content: ''
-  // width: calc(100% - 102px)
-  min-width: 288px
-  height: 2px
-  background: #000
-  position: absolute
-  top: -26px
-  left: 54px
+// .tabs::before
+//   content: ''
+//   min-width: 288px
+//   height: 2px
+//   background: #000
+//   position: absolute
+//   top: -26px
+//   left: 54px
 
 .tab_content
   max-width: 378px
   font-size: 12px
 
-.current
+.how-we-works-tabs-wrapp
+  display: none
+.how-we-works-tabs-wrapp.current
   display: block
-
-
-// .how-we-works-new-project
-//     margin: auto
-//     width: 230px
-
-// .how-we-works-new-project
-//     text-align: center
-
-// .how-we-works-new-project span
-//     margin: -45px 0 55px
-//     display: block
-//     text-transform: uppercase
-//     font-size: 23px
-//     font-weight: 600
-//     color: #fff
-// .block-way-1
-//     position: absolute
-//     background: #000
-//     height: 35px
-//     width: 3px
-//     margin: -40px 0 0px 110px
-
-// .how-we-works-ways
-//     display: flex
-//     justify-content: space-between
-
-// .how-we-works-way 
-//     text-align: -webkit-center
-
-// .how-we-works-way img
-//     width: 75px
-//     height: 75px
-//     display: block
-//     background: #ddd
-//     padding: 14px
-//     border-radius: 90px
-
-// .nav-bg-1
-//     background: #fff
-//     height: 100px
-//     width: 100%
-//     position: absolute
-// .how-we-works-way .db
-//     display: none
-
-// .block-way-2
-//     position: absolute
-//     height: 27px
-//     background: #000
-//     width: 3px
-//     margin: 5px 0px 0px 60px
-// .block-way-3
-//     position: absolute
-//     height: 3px
-//     background: #000
-//     width: 240px
-//     margin: 29px 0px 0px 60px
-// .block-way-4
-//     position: absolute
-//     height: 35px
-//     background: #000
-//     width: 3px
-//     margin: 30px 0px 0px 105px
-// .block-way-5
-//     position: absolute
-//     height: 35px
-//     background: #000
-//     width: 3px
-//     margin: 30px 0px 0px 297px
-// .how-we-works-sub-ways
-//     display: none
-//     position: absolute
-//     width: 400px
-//     margin: 25px -10px
-
 
 // ЭФФЕКТИВНОСТЬ ВО ВСЕМ
 .more-results_bg
