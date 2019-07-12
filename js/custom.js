@@ -71,8 +71,8 @@ $(document).ready(function(){
 	$('.slider').slick({
 	  dots: false,
 	  arrows: true,
-	  nextArrow: '<img class="arrow arrow__next" src="img/right.png">',
-	  prevArrow: '<img class="arrow arrow__prev" src="img/left.png">',
+	  nextArrow: '<img class="arrow arrow__next" src="/wp-content/themes/ant-team-ru/assets/img/right.png">',
+	  prevArrow: '<img class="arrow arrow__prev" src="/wp-content/themes/ant-team-ru/assets/img/left.png">',
 	  adaptiveHeight: true,
 	  slidesToShow: 4,
 	  slidesToScroll: 1,
@@ -168,8 +168,8 @@ $(document).ready(function(){
 	$('.slides').slick({
 	  dots: true,
 	  arrows: true,
-	  prevArrow: '<img class="arrow arrow__next" src="img/right.png">',
-	  nextArrow: '<img class="arrow arrow__prev" src="img/left.png">',
+        nextArrow: '<img class="arrow arrow__next" src="/wp-content/themes/ant-team-ru/assets/img/right.png">',
+        prevArrow: '<img class="arrow arrow__prev" src="/wp-content/themes/ant-team-ru/assets/img/left.png">',
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  responsive: [
@@ -370,7 +370,7 @@ $(document).ready(function(){
 	$(window).resize(function(e){
 	    if(window.innerWidth < 1026) {
 	        if(!$('.slider').hasClass('slick-initialized')){
-	            mobileOnlySlider();
+	           mobileOnlySlider_works();
 	        }
 
 	    }else{
@@ -417,6 +417,25 @@ $(document).ready(function(){
 	    mobileOnlySlider_works();
 	}
 
+
+
+
 }); //end document ready function
 
-
+$ = jQuery;
+$(document).ready(function () {
+    $('.form-search').on('submit', function (e) {
+        e.preventDefault();
+        url = '';
+        author = $('.selectAuthor option:selected').val();
+        date = $('.datepicker-here').val();
+        if (author != 0 && author != null) {
+            url+=author;
+        }
+        if (date != 0 && date != null && date != '') {
+            //url+='&date-'+date.replace(/\s/g, '')+'/';
+            url+='?date='+date.replace(/\s/g, '');
+        }
+        window.location.href=url;
+    });
+});
